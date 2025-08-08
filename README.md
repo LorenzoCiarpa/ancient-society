@@ -279,48 +279,6 @@ Configure contract addresses in respective config files:
 
 ---
 
-## API Documentation
-
-### Core Endpoints
-
-#### Authentication
-- `POST /api/auth/login` - User authentication
-- `POST /api/auth/register` - User registration
-- `GET /api/auth/profile` - Get user profile
-
-#### Game Data
-- `GET /api/buildings` - Get user buildings
-- `GET /api/lands` - Get user lands
-- `GET /api/resources` - Get user resources
-- `POST /api/actions/stake` - Stake building/land
-- `POST /api/actions/unstake` - Unstake assets
-
-#### Marketplace
-- `GET /api/marketplace/listings` - Get marketplace listings
-- `POST /api/marketplace/buy` - Purchase item
-- `POST /api/marketplace/sell` - List item for sale
-
-### Event Handler APIs
-Each event handler exposes health check and status endpoints for monitoring.
-
----
-
-## Contributing
-
-### Development Guidelines
-1. Follow existing code style and conventions
-2. Write comprehensive tests for new features
-3. Update documentation for API changes
-4. Ensure smart contract security best practices
-
-### Pull Request Process
-1. Fork the repository
-2. Create feature branch
-3. Make changes with proper testing
-4. Submit pull request with detailed description
-
----
-
 ## Security Considerations
 
 ⚠️ **Important Security Notes**:
