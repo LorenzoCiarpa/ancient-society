@@ -1,0 +1,24 @@
+.land-npc {
+    .ATM {
+        width         : 100%;
+        height        : 100%;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+
+        .notAvailableATM {
+            width: 80%;
+            font : normal large Raleway;
+            color: white;
+        }
+
+        .notAvailableATM_Img {
+            width : 50%;
+            height: auto;
+
+            @media screen and (max-width: 1200px) {
+                width: 90%;
+            }
+        }
+    }
+}

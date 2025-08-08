@@ -1,0 +1,47 @@
+.pvp-confirm-modal {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+
+    .MuiDialog-paper {
+        background: rgb(10, 20, 40);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        
+        box-shadow: 2px 2px 5px 2px black !important;
+
+        font: normal normal normal 1rem Raleway;
+        color: #c8c8c8;
+
+        .pvp-confirm-modal-header {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            font: normal normal normal 1.4rem Optimus;
+            color: #ffbc00;
+        }
+        .pvp-confirm-modal-content {
+            padding: 1rem 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .pvp-confirm-modal-footer {
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .rbutton {
+                background: rgb(10, 20, 40);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+
+                font: normal normal normal 1rem Raleway !important;
+                color: white;
+
+                padding: 7px 12px !important;
+                &:hover {
+                    background: rgb(20, 30, 50);
+                }
+            }
+        }
+    }
+}

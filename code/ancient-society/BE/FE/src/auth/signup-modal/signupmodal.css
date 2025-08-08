@@ -1,0 +1,113 @@
+.signup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../containers-game/map/assets/map.jpg");
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signup-modal {
+  z-index: 9999;
+  position: fixed;
+  top: 25%;
+  left: 10vw;
+  right: 10vw;
+  margin: auto;
+  height: auto;
+  width: 500px;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.589);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .signup-modal {
+    width: 100vw;
+    top: 20vh;
+    left: 0;
+  }
+}
+
+.signup-modal .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: #16161583;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+}
+
+.signup-modal .head h2 {
+  margin: 1.2vw auto;
+  font: normal normal bold 1.6rem Cinzel;
+  color: white;
+}
+
+.signup-modal .head img {
+  width: 250px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.signup-modal .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 250px;
+  background-color: #16161583;
+}
+
+@media screen and (max-width: 600px) {
+  .signup-modal .body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 15px;
+  }
+}
+
+.signup-modal .socialIcons {
+  z-index: 9999;
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signup-modal .socialIcons img {
+  margin: 10px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7016%) hue-rotate(52deg) brightness(10%) contrast(74%);
+          filter: invert(100%) sepia(0%) saturate(7016%) hue-rotate(52deg) brightness(10%) contrast(74%);
+}
+/*# sourceMappingURL=signupmodal.css.map */

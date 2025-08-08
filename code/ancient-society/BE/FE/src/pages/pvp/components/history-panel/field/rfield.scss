@@ -1,0 +1,294 @@
+.rfield {
+  width: 100%;
+  height: calc(100%);
+
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+
+  position: relative;
+
+  .slot-div {
+    margin-top: 5rem;
+    height: calc(100% - 8rem);
+    max-height: calc(100% - 8rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+    .divider {
+      position: absolute;
+      width: calc(100% - 10rem);
+      height: 0px;
+      border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+      // background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .slot-column-div {
+      display: flex;
+      z-index: 8;
+      width: 60%;
+      flex-direction: row;
+      justify-content: space-between;
+
+      animation: ease-in-out;
+    }
+  }
+
+  .action-group{
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    svg {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      position: relative;
+      width: 40px;
+      color: gold;
+      margin: 0px 1rem;
+      &:hover {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .turn-nav {
+    justify-content: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    position: absolute;
+  }
+
+  .turnMark {
+    cursor: pointer;
+    margin: 0px 1rem;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: normal normal normal 1rem Arial;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover,
+    &.current {
+      background-color: green;
+    }
+
+    &.ready {
+      background: rgba(0, 255, 0, 0.4);
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    // background: radial-gradient(rgba(200, 100, 0, 0.5) 0%, black 100%);
+
+    .turn-image {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      opacity: .3;
+      top: 0px;
+      left: calc(100% - 100px);
+    }
+
+    .map-image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: .1;
+    }
+
+    .affix-img {
+      position: absolute;
+      z-index: 99;
+      width: 20px;
+      height: 20px;
+      left: 5px;
+      top: 5px;
+      cursor: pointer;
+
+      &:hover {
+        columns: white;
+      }
+
+    }
+
+    .arrow-next-img {
+      position: absolute;
+      width: 30px;
+      bottom: calc(50% - 50px);
+      right: 1rem;
+      cursor: pointer;
+
+      &.notAllowed {
+        opacity: .5;
+        cursor: default;
+      }
+
+    }
+
+    .arrow-prev-img {
+      position: absolute;
+      width: 30px;
+      bottom: calc(50% - 50px);
+      left: 1rem;
+      cursor: pointer;
+
+      &.notAllowed {
+        opacity: .5;
+        cursor: default;
+      }
+
+    }
+  }
+
+  .readyBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    padding: 3px 5px !important;
+    font: normal bold normal 0.6rem Optimus !important;
+
+    color: white;
+    background: rgb(100, 50, 0);
+
+    &:hover {
+      color: rgb(100, 50, 0);
+      background: white;
+    }
+
+    svg {
+      font-size: 15px;
+    }
+  }
+
+  .affix-div {
+    width: 110px;
+    height: 33px;
+    position: absolute;
+    display: flex;
+
+    .affix-slot {
+      width: 33.5px;
+      height: 33.5px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  .affix-div-negative {
+    width: 110px;
+    height: 33px;
+    position: absolute;
+    display: flex;
+
+    .affix-slot {
+      width: 33.5px;
+      height: 33.5px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(255, 100, 100, 0.3);
+      }
+    }
+  }
+}
+
+.tooltip-affix-property {
+  display: flex;
+  color: gold;
+  flex-direction: column !important;
+  font: normal normal normal .8rem Cormorant !important;
+  justify-content: center;
+  align-items: center;
+
+
+  .btn-affix-remove {
+    color: rgba(255, 100, 100, 50);
+    font: normal normal normal 1.2rem Optimus !important;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 5px;
+
+    &:hover {
+      font-weight: 700 !important;
+    }
+  }
+}
+
+.affix-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  font-family: Helvetica;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: gold;
+
+  .hmodal-affix-property {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 50%;
+    height: 120px;
+    font-family: Cormorant;
+    font-weight: 700;
+    width: 120px;
+
+    &:hover {
+      color: rgba(255, 100, 100, 1);
+      box-shadow: 0px 0px 10px 10px black;
+    }
+  }
+
+  .hmodal-affix-name {
+    width: 100%;
+    text-align: center;
+    font: normal normal normal 1.2rem Cormorant !important;
+    display: block;
+  }
+
+  .hmodal-affix-description {
+    text-align: left;
+    padding-top: 1rem;
+    text-indent: 3px;
+    width: 100px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

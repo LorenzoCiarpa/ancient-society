@@ -1,0 +1,139 @@
+.features {
+  margin-top: 40px;
+  margin-bottom: 140px;
+  white-space: pre-line;
+}
+
+.features .call-to-action {
+  margin-bottom: 50px;
+}
+
+.features .call-to-action h2 {
+  font: normal normal normal 1.8rem Cinzel;
+}
+
+@media screen and (max-width: 800px) {
+  .features .call-to-action h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.features .btn-a {
+  border: 3px solid #DFDFDD;
+  color: #DFDFDD;
+  background: none;
+  padding: 1.5rem 4rem;
+  width: 100px;
+  height: 38px;
+  font: normal normal normal 2rem Cinzel;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+.features .btn-span {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.features .btn-a:hover {
+  color: #882B21;
+  background: #DFDFDD;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.features .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding-top: 15vh;
+  padding: 15px;
+}
+
+.features .container hr {
+  width: 90%;
+  margin: 60px;
+  opacity: 0.3;
+}
+
+.features .container .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .features .container .feature {
+    margin-bottom: 70px;
+  }
+}
+
+.features .container .feature img {
+  width: 37vw;
+  max-width: 380px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-filter: drop-shadow(2px 2px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white);
+          filter: drop-shadow(2px 2px 0 white) drop-shadow(-1px 1px 0 white) drop-shadow(1px -1px 0 white) drop-shadow(-1px -1px 0 white);
+}
+
+.features .container .feature img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.features .container img.text-first {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.features .container .text.image-first {
+  text-align: left;
+}
+
+.features .container .text.text-first {
+  text-align: right;
+}
+
+.features .container .text {
+  width: 47vw;
+  max-width: 380px;
+  padding: 20px;
+}
+
+.features .container h2 {
+  margin: 0 auto;
+  font: normal normal bold 1.2rem Cinzel;
+  color: #FFB13B;
+}
+
+@media screen and (min-width: 600px) {
+  .features .container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.features .container p {
+  margin: 0 auto;
+  font: normal normal normal 0.9rem Raleway;
+  color: #DFDFDD;
+}
+
+@media screen and (min-width: 600px) {
+  .features .container p {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=features.css.map */

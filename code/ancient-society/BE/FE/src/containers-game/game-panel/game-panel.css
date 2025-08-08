@@ -1,0 +1,69 @@
+.game-panel .content .scroll-content .page-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-panel .content .scroll-content .page-content .claimAll {
+  text-align: center;
+  color: white;
+}
+
+.game-panel .content .scroll-content .page-content .claimAll h3 {
+  font: normal bold 1.6rem Raleway;
+}
+
+.game-panel .content .scroll-content .page-content .claimAll p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: normal normal 1.2rem Raleway;
+}
+
+.game-panel .content .scroll-content .page-content .claimAll img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.game-panel .content .scroll-content .page-content .btn-a.btn-claimAll {
+  width: 100px;
+  height: 30px;
+  font-size: 1.4rem;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+@media screen and (max-width: 700px) {
+  .game-panel .content .scroll-content .page-content .btn-a.btn-claimAll {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .game-panel .content .scroll-content .page-content .btn-a.btn-claimAll {
+    height: 40px;
+    font-size: 2.2rem;
+  }
+}
+
+.game-panel .content .scroll-content .page-content .btn-span.btn-claimAll {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.game-panel .content .scroll-content .page-content .btn-a.btn-claimAll:hover:not(.disabled) {
+  background: #c8c8c8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.game-panel .content .scroll-content .page-content .btn-a.btn-claimAll.disabled {
+  background-color: #848D8C;
+  border-top: #848D8C;
+  border-bottom: #848D8C;
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=game-panel.css.map */

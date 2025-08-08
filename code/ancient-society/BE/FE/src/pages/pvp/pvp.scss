@@ -1,0 +1,27 @@
+.pvp-page {
+    * {
+        box-sizing: border-box;
+        transition: 0.2s all;
+        -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+        // unselectable:"on"
+        // onselectstart:"return false;"
+        // onmousedown:"return false;"
+    }
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("./assets/page-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

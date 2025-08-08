@@ -1,0 +1,145 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: 9998;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.popup-inventory.filter-mint {
+  background-color: #882B21;
+}
+
+.popup-inventory.filter-add {
+  background-color: #295F90;
+}
+
+.popup-inventory {
+  z-index: 9999;
+  position: fixed;
+  left: 10vw;
+  right: 10vw;
+  margin: auto;
+  height: auto;
+  width: 36rem;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .popup-inventory {
+    position: fixed;
+    left: 5vw;
+    right: 5vw;
+    top: 30%;
+    width: 20rem;
+  }
+}
+
+.popup-inventory .head {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: #DFDFDD;
+}
+
+.popup-inventory .head h2 {
+  margin: 5px auto;
+  font: normal normal bold 1.2rem Cinzel;
+}
+
+.popup-inventory .head h2.filter-mint {
+  color: #882B21;
+}
+
+.popup-inventory .head h2.filter-add {
+  color: #295F90;
+}
+
+.popup-inventory .head img {
+  position: absolute;
+  right: 0.6rem;
+  height: 1.4rem;
+  -webkit-filter: brightness(0) saturate(100%) invert(19%) sepia(21%) saturate(6603%) hue-rotate(346deg) brightness(90%) contrast(87%);
+          filter: brightness(0) saturate(100%) invert(19%) sepia(21%) saturate(6603%) hue-rotate(346deg) brightness(90%) contrast(87%);
+}
+
+.popup-inventory .body {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-inventory .body .popup-inventory-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin: 0 40px;
+  color: #DFDFDD;
+}
+
+.popup-inventory .body .popup-inventory-container p {
+  margin: 20px 25px;
+  font: normal normal normal 1.4rem Raleway;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.popup-inventory .body .popup-inventory-container .btn-a.btn-popup-mint {
+  z-index: 1;
+  height: 20px;
+  width: 15px;
+  font: normal normal normal 1.4rem Cinzel;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+.popup-inventory .body .popup-inventory-container .btn-a.btn-popup-mint:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.popup-inventory .body img.popup-border {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  height: 80%;
+  width: 98%;
+}
+
+.popup-inventory .body span.popup-overlay {
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/bk.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.popup-inventory .footer {
+  height: 12px;
+  background-color: #DFDFDD;
+}
+/*# sourceMappingURL=popupinventory.css.map */

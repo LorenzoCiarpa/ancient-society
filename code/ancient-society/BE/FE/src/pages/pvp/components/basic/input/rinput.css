@@ -1,0 +1,22 @@
+.rinput {
+  width: 100px;
+  height: 35px;
+}
+
+.rinput input {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font: normal bold normal 0.9rem Cormorant;
+  color: #fffdbe;
+}
+
+.rinput input:hover, .rinput input:focus {
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+}
+/*# sourceMappingURL=rinput.css.map */

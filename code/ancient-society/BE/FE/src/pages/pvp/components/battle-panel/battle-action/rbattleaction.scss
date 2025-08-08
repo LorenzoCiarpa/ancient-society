@@ -1,0 +1,94 @@
+.rbattleaction {
+    cursor: pointer;
+    position: relative;
+    width: calc(50% - 10px);
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: calc(50% - 10px);
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+
+    .autobattle-back-image {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.05;
+
+        &:hover {
+            opacity: 0.1;
+        }
+    }
+
+    .btn-leave-queue {
+        width: fit-content;
+        padding: 3px 5px;
+        margin-top: 5px;
+        bottom: 5px;
+        right: 10px;
+        /* float: right; */
+        position: absolute;
+        font: normal normal normal 0.8rem Optimus;
+        color: rgb(150 100 0);
+        border-radius: 5px;
+        // border: 1px solid grey;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px black;
+
+    &:hover {
+        box-shadow: none;
+
+        .action-title {
+            color: #ffbc00;
+        }
+
+        .action-description {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        span {
+            position: absolute;
+        }
+    }
+
+    .action-title {
+        font: normal normal normal 1.1rem Optimus;
+        color: rgb(150 100 0);
+    }
+
+    .action-description {
+        margin-top: 5px;
+        font: normal normal normal 0.9rem Cormorant;
+        color: rgba(255, 255, 255, 0.7);
+
+        span {
+            position: absolute;
+        }
+
+        .waiting-img {
+            width: 100%;
+            height: 55px;
+        }
+    }
+}

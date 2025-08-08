@@ -1,0 +1,475 @@
+.rbattlepanel {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .rbattlepanel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.rbattlepanel .battle-list {
+  width: 320px;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+}
+
+@media screen and (max-width: 1200px) {
+  .rbattlepanel .battle-list {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.rbattlepanel .battle-list:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.rbattlepanel .battle-container {
+  width: calc(100% - 350px - 1rem);
+  height: 100%;
+  margin-left: 1rem;
+  padding: 1rem;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 1200px) {
+  .rbattlepanel .battle-container {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: calc(100% - 300px);
+  }
+}
+
+.rbattlepanel .battle-container .current-status-text {
+  margin-bottom: 1rem;
+  font: normal normal normal 1rem Cormorant;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rbattlepanel .battle-container .current-status-text a {
+  font-family: Arial;
+}
+
+.rbattlepanel .battle-container .current-status-text a:nth-child(1) {
+  margin-left: 5px;
+  color: greenyellow;
+}
+
+.rbattlepanel .battle-container .current-status-text a:nth-child(2) {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.rbattlepanel .battle-container .battle-panel-info {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record {
+  cursor: pointer;
+  width: 50%;
+  height: 80px;
+  padding: 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #969696;
+}
+
+@media screen and (max-width: 900px) {
+  .rbattlepanel .battle-container .battle-panel-info .battle-record {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .rbattlepanel .battle-container .battle-panel-info .battle-record {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rbattlepanel .battle-container .battle-panel-info .battle-record {
+    width: 100%;
+  }
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-title {
+  font: normal normal normal 1rem Optimus;
+  color: #c8c8c8;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content {
+  margin-top: 5px;
+  font: normal normal normal 1rem Cormorant;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.battle-result a {
+  font: normal normal normal 0.9rem Arial;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.battle-result a:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.rank-result a {
+  font: normal normal normal 0.9rem Arial;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.rank-result a:nth-child(1) {
+  font-size: 1rem;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.league-result a:nth-child(2), .rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.league-result a:nth-child(3) {
+  font: normal normal normal 0.9rem Arial;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.league-result a:nth-child(2) {
+  font-size: 1rem;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record .record-content.up-league-result a:nth-child(2) {
+  font: normal normal normal 0.9rem Arial;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover {
+  color: white;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-title {
+  color: #ffbc00;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.battle-result a:nth-child(1) {
+  color: #64ff64;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.battle-result a:nth-child(2) {
+  color: #ff6464;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.rank-result a:nth-child(1) {
+  font-size: 1rem;
+  color: #ffbc00;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.rank-result a:nth-child(2) {
+  font-size: 0.9rem;
+  color: greenyellow;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.league-result a:nth-child(1) {
+  color: #ffbc00;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.league-result a:nth-child(2) {
+  color: #ffbc00;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.league-result a:nth-child(3) {
+  color: greenyellow;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.up-league-result a:nth-child(1) {
+  color: #ffbc00;
+}
+
+.rbattlepanel .battle-container .battle-panel-info .battle-record:hover .record-content.up-league-result a:nth-child(2) {
+  color: #ff6464;
+}
+
+.rbattlepanel .battle-container .battle-actions-text {
+  padding: 2rem 0px 5px 0px;
+  font: normal normal normal 1rem Cormorant;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rbattlepanel .battle-container .battle-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rbattlepanel .detail-view {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  position: relative;
+  font: normal normal normal 1rem Cormorant;
+  color: white;
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rbattlepanel .detail-view .backBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rbattlepanel .detail-view .backBtn svg {
+  font-size: 20px;
+}
+
+.rbattlepanel .detail-view .backBtn:hover {
+  background: black;
+}
+
+.rbattlepanel .detail-view .turn-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.rbattlepanel .detail-view .turn-nav .turnMark {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: normal normal normal 1rem Arial;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rbattlepanel .detail-view .turn-nav .turnMark:hover, .rbattlepanel .detail-view .turn-nav .turnMark.current {
+  border-color: green;
+}
+
+.rbattlepanel .detail-view .turn-nav .turnMark.ready {
+  background: rgba(0, 255, 0, 0.4);
+}
+
+.rbattlepanel .detail-view .positive-unit-list,
+.rbattlepanel .detail-view .negative-unit-list {
+  width: 100%;
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.positive-unit-list .unit-list,
+.rbattlepanel .detail-view .negative-unit-list.positive-unit-list .unit-list {
+  width: 100%;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .player-info,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .player-info {
+  width: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .player-info .player-avatar,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .player-info .player-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .player-info .player-avatar img,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .player-info .player-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .player-info .player-name,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .player-info .player-name {
+  margin-top: 3px;
+  color: gold;
+  font: normal normal normal 1rem Optimus;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .rank-info,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .rank-info {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .rank-info .medal,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .rank-info .medal {
+  width: 30px;
+  height: 30px;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .rank-info .medal img,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .rank-info .medal img {
+  width: 100%;
+  height: 100%;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .rank-info .war-point,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .rank-info .war-point {
+  margin-left: 10px;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .rank-info .war-point a,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .rank-info .war-point a {
+  font-size: 1.2rem;
+  color: #ffbc00;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .leaderboard-info,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .leaderboard-info {
+  margin-left: 1rem;
+  font: normal normal normal 0.8rem Optimus;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .leaderboard-info a:nth-child(1),
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .leaderboard-info a:nth-child(1) {
+  font-size: 1.2rem;
+  color: #ffbc00;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .leaderboard-info a:nth-child(2),
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .leaderboard-info a:nth-child(2) {
+  font-size: 1rem;
+  color: white;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .battle-record,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .battle-record {
+  margin-left: 1rem;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .battle-record a,
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .battle-record a {
+  font-size: 1rem;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .battle-record a:nth-child(1),
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .battle-record a:nth-child(1) {
+  margin-left: 10px;
+  color: #64ff64;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .battle-record a:nth-child(2),
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .battle-record a:nth-child(2) {
+  color: #ff6464;
+}
+
+.rbattlepanel .detail-view .positive-unit-list.negative-unit-list .more-info .battle-record a:nth-child(3),
+.rbattlepanel .detail-view .negative-unit-list.negative-unit-list .more-info .battle-record a:nth-child(3) {
+  color: white;
+}
+
+.rbattlepanel .detail-view .battle-field {
+  height: -webkit-fill-available;
+}
+/*# sourceMappingURL=rbattlepanel.css.map */

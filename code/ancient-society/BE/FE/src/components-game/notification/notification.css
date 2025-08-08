@@ -1,0 +1,143 @@
+.notification-handler {
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.85);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notification-handler .scroll-content {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+}
+
+.notification-tutorial {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 500px;
+  padding-top: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .notification-tutorial {
+    min-height: 90vh;
+  }
+}
+
+.notification-tutorial .tutorialHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: small;
+}
+
+.notification-tutorial .tutorialImg {
+  width: 80%;
+  max-width: 800px;
+}
+
+.notification-tutorial p {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Raleway;
+}
+
+.notification-tutorial .tutorialNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 10px;
+}
+
+.notification-tutorial .tutorialNav button {
+  font-size: 1.2rem;
+}
+
+.notification-tutorial .MuiButton-root.ctaBtn {
+  font: 1.2rem bold Raleway;
+  color: white;
+  border: 3px solid white;
+  margin: 20px;
+  padding: 15px;
+  min-width: 250px;
+}
+
+.notification-tutorial .MuiButton-root.ctaBtn a {
+  color: white;
+}
+
+.waiting {
+  background-color: #b92929;
+}
+
+.warning {
+  background-color: #F77621;
+}
+
+.success {
+  background-color: #17852f;
+}
+
+.success-border {
+  border-color: #1b9e38 !important;
+}
+
+.gold {
+  color: gold;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.icon-button {
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  opacity: 0.7;
+}
+
+.max-right {
+  position: absolute;
+  right: 10px;
+}
+/*# sourceMappingURL=notification.css.map */

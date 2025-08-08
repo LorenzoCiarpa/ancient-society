@@ -1,0 +1,232 @@
+.claim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #882B21;
+  padding: 2.5vw 0;
+}
+
+.claim .building {
+  height: auto;
+  max-height: 400px;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px #DFDFDD solid;
+}
+
+@media screen and (max-width: 700px) {
+  .claim .building {
+    display: none;
+  }
+}
+
+.claim .container {
+  width: 45%;
+  margin-left: 3vw;
+}
+
+@media screen and (max-width: 700px) {
+  .claim .container {
+    margin-top: 5px;
+    width: 95%;
+    margin-left: 0;
+  }
+}
+
+.claim .container .container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal bold 1.2rem Cinzel;
+  margin-bottom: 10px;
+}
+
+.claim .container .container-1 img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.claim .container .container-1 span {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.claim .container .container-2 {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: normal normal normal 0.8rem Raleway;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .claim .container .container-2 {
+    font-size: 1.2rem;
+  }
+}
+
+.claim .container .container-2 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.claim .container .container-2 .c2-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.claim .container .container-2 .c2-row p {
+  margin-left: 10px;
+}
+
+.claim .container .container-2 hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.claim .container .c3-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: normal normal normal 1.2rem Cinzel;
+  color: #DFDFDD;
+}
+
+@media screen and (max-width: 700px) {
+  .claim .container .c3-headline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.6rem;
+  }
+  .claim .container .c3-headline p {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .claim .container .c3-headline .new-balance {
+    margin-left: 30px;
+  }
+}
+
+.claim .container .c3-headline img {
+  height: 15px;
+  width: 40px;
+  -webkit-filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1378%) hue-rotate(57deg) brightness(96%) contrast(93%);
+          filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1378%) hue-rotate(57deg) brightness(96%) contrast(93%);
+}
+
+.claim .container .container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin-top: 5px;
+}
+
+.claim .container .container-3 img {
+  height: auto;
+  width: 50%;
+}
+
+.claim .container .container-3 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal bold 1vmax Cinzel;
+}
+
+.claim .container .container-3 .enough {
+  color: auto;
+}
+
+.claim .container .container-3 .missing {
+  color: gold;
+}
+
+.claim .container .btn-a.btn-claim-popup {
+  margin: 20px auto 0 auto;
+  width: 3vw;
+  height: 3vw;
+  font-size: 1.6rem;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+@media screen and (max-width: 700px) {
+  .claim .container .btn-a.btn-claim-popup {
+    height: 5vw;
+    width: 5vw;
+    font-size: 1.8rem;
+  }
+}
+
+.claim .container .btn-span.btn-claim-popup {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.claim .container .btn-a.btn-claim-popup:hover:not(.disabled) {
+  background: #c8c8c8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.claim .container .btn-a.btn-claim-popup.disabled {
+  background-color: #848D8C;
+  border-top: #848D8C;
+  border-bottom: #848D8C;
+  cursor: not-allowed;
+}
+
+.claim .green {
+  color: #73EE6F;
+}
+/*# sourceMappingURL=popupgameclaim.css.map */

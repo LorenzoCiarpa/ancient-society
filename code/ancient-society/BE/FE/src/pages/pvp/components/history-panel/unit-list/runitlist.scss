@@ -1,0 +1,23 @@
+.runitlist {
+    width   : calc(100% - 60px);
+    height  : 77px;
+    overflow: auto;
+
+    display      : flex;
+    flex-wrap    : nowrap;
+    align-content: flex-start;
+
+    border-radius: 5px;
+
+    margin: .5rem 0rem .5rem 5px;
+
+    &.positive {
+        border    : 1px solid rgb(0, 100, 0);
+        background: rgba(0, 100, 0, 0.2);
+    }
+
+    &.negative {
+        border    : 1px solid rgb(100, 0, 0);
+        background: rgba(100, 0, 0, 0.2);
+    }
+}

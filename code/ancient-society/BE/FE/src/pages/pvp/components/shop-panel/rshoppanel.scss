@@ -1,0 +1,413 @@
+.rshoppanel {
+    width: 100%;
+    height: 100%;
+    margin-top: .5rem;
+    position: relative;
+
+    display: flex;
+
+    .panel-tabs {
+        width: 90px;
+        padding-right: 1rem;
+
+        display: flex;
+        flex-direction: column;
+
+        .panel-tab {
+            cursor: pointer;
+
+            .MuiBadge-badge {
+                visibility: hidden;
+            }
+
+            &.buy-tab{
+                color: #ff5d5d;
+                
+                &.selected {
+                    border-bottom: 1px solid #ff5d5d;
+                    color: #ff5d5d;
+                }
+            }
+
+            width: 100%;
+            padding: 0px 0px;
+            margin: 10px 0px;
+
+            text-align: right;
+
+            font: normal normal normal 1rem Optimus;
+
+            border-bottom: 1px solid transparent;
+            color: rgba(255, 255, 255, 0.8);
+
+            &:hover {
+                border-bottom: 1px solid #ffe76088;
+                color: #ffe76088;
+
+                .MuiBadge-badge {
+                    visibility: visible;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+
+            &.selected {
+                margin: 20px 0px;
+                font-size: 1.5rem;
+                border-bottom: 1px solid #ffbc00;
+                color: #ffbc00;
+
+                .MuiBadge-badge {
+                    visibility: visible;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .inventory-list {
+        width: calc(100% - 50px);
+        overflow: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    .detail-view {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+
+        display: flex;
+        position: relative;
+
+        .backBtn {
+            cursor: pointer;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 2px 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            svg {
+                font-size: 20px;
+                color: white;
+            }
+
+            &:hover {
+                background: black;
+            }
+        }
+
+        .left-panel {
+            width: 40%;
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .inventory-img {
+                width: 200px;
+                height: 200px;
+
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.5);
+
+                padding: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .inventory-info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 1rem 0rem;
+
+                .inventory-name {
+                    color: gold;
+                    font: normal normal normal 1rem Optimus;
+                }
+
+                .inventory-quantity {
+                    margin-left: 1rem;
+
+                    color: #00ffff;
+                    font: normal normal normal 1rem Cormorant;
+                }
+            }
+
+            .inventory-description {
+                width: 100%;
+                text-indent: 2rem;
+
+                color: rgb(255, 255, 255);
+                font: normal normal normal 0.9rem Cormorant;
+
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+
+                padding: 1rem;
+                line-height: 1.3;
+            }
+        }
+
+        .right-panel {
+            width: 60%;
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .inventory-cost-text {
+                margin-top: 1rem;
+
+                color: rgb(255 100 100);
+                font: normal normal normal 0.9rem Cormorant;
+            }
+
+            .inventory-costs {
+                width: 100%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                .inventory-cost {
+                    display: flex;
+                    align-items: center;
+
+                    padding: 5px;
+
+                    &.notAllowed {
+                        .inventory-cost-info {
+                            .inventory-cost-quantity {
+                                color: #ff5a5a;
+                            }
+                        }
+
+                        .inventory-cost-img {
+                            border: 1px solid #ff5a5a;
+                        }
+                    }
+
+                    .inventory-cost-img {
+                        width: 50px;
+                        height: 50px;
+
+                        padding: 5px;
+
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        border-radius: 5px;
+                        background: rgba(0, 0, 0, 0.5);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .inventory-cost-info {
+                        margin-left: 5px;
+                        width: 50px;
+
+                        .inventory-cost-name {
+                            color: #ffbc00;
+                            font: normal normal normal 0.9rem Cormorant;
+                        }
+
+                        .inventory-cost-quantity {
+                            color: white;
+                            font: normal normal normal 0.9rem Cormorant;
+                        }
+                    }
+                }
+            }
+
+            .inventory-drop-text {
+                color: rgb(150 255 0);
+                font: normal normal normal 0.9rem Cormorant;
+            }
+
+            .inventory-drops {
+                width: 100%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                .inventory-drop {
+                    display: flex;
+                    align-items: center;
+
+                    padding: 1rem 1rem;
+
+                    .inventory-drop-img {
+                        width: 50px;
+                        height: 50px;
+
+                        padding: 5px;
+
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        border-radius: 5px;
+                        background: rgba(0, 0, 0, 0.5);
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .inventory-drop-info {
+                        margin-left: 1rem;
+                        width: 70px;
+
+                        .inventory-drop-name {
+                            color: #ffbc00;
+                            width: 70px;
+                            text-overflow: ellipsis;
+                            font: normal normal normal 0.9rem Cormorant;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                        .inventory-drop-quantity {
+                            color: white;
+                            font: normal normal normal 0.9rem Cormorant;
+                        }
+                    }
+                }
+            }
+
+            .inventory-open-text {
+                width: 100%;
+                padding: 10px 0px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                color: rgba(255, 255, 255, 0.8);
+                font: normal normal normal 0.9rem Cormorant;
+            }
+
+            .inventory-open-action {
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .openQuantityInput input {
+                    color: #00ffff !important;
+                }
+
+                .openChestBtn {
+                    margin-left: 1rem;
+
+                    background: gold;
+                    color: black;
+
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.5);
+                        color: gold;
+                    }
+                }
+            }
+
+            .separator {
+                margin: 1rem 0rem;
+                width: 100%;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .inventory-buy-text {
+                color: rgb(150 255 0);
+                font: normal normal normal 0.9rem Cormorant;
+            }
+
+            .inventory-buy-description {
+                width: 100%;
+                padding: 10px 0px;
+
+                display: flex;
+                align-items: center;
+                justify-content: right;
+
+                color: rgba(255, 255, 255, 0.8);
+                font: normal normal normal 0.9rem Cormorant;
+
+                a {
+                    margin: 0px 5px;
+                    font-size: 1.1rem;
+                }
+
+                a:first-child {
+                    color: rgb(255, 50, 50);
+                }
+
+                a:last-child {
+                    color: #00ffff;
+                }
+            }
+
+            .inventory-buy-action {
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: right;
+
+                .buyQuantityInput input {
+                    color: #00ffff !important;
+                }
+
+                .buyChestBtn {
+                    margin-left: 1rem;
+
+                    background: gold;
+                    color: black;
+
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.5);
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-tab{
+    margin-top: -.5rem;
+    height: 48px;
+}
+
+.shop-tab-item{
+    color: white !important;
+    font: normal normal normal 1.1rem Optimus !important;
+    width: 50%;
+
+    &.selected {
+        color: gold !important;
+    }
+}
+
+.MuiTabs-indicator{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}

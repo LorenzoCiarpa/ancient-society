@@ -1,0 +1,22 @@
+.pvp-backdrop {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(3px);
+
+  .MuiDialog-paper {
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pvp-backdrop-loading-bar {
+      color: #c8c8c8;
+    }
+    .pvp-backdrop-text-content {
+      margin-top: 1rem;
+
+      font: normal normal normal 0.9rem Raleway;
+      color: #c8c8c8 !important;
+    }
+  }
+}

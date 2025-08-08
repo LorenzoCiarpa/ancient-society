@@ -1,0 +1,410 @@
+.game-nav {
+  top: 100px;
+  position: absolute;
+  z-index: 101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 850px;
+  width: 130px;
+  background-image: url("../../assets-ui/ui-navbar.webp");
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .game-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .game-nav {
+    display: none;
+  }
+}
+
+.game-nav img.nav-bk {
+  margin-left: 20px;
+  position: absolute;
+  width: 87px;
+}
+
+.game-nav div.btn-nav {
+  position: relative;
+}
+
+.game-nav div.btn-nav .alert {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ff8d00;
+  color: black;
+  border-radius: 50%;
+  font: normal bold normal 15px Raleway;
+}
+
+.game-nav img.btn-nav {
+  width: 50px;
+  cursor: pointer;
+}
+
+.game-nav img.nav-lock {
+  position: absolute;
+  width: 25px;
+  top: 25px;
+  left: 30px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: invert(100%) drop-shadow(2px 2px 1px black);
+          filter: invert(100%) drop-shadow(2px 2px 1px black);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.game-nav img.nav-lock:hover {
+  top: 20px;
+  left: 25px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.game-nav img.nav-lock.nav-lock-delegation {
+  -webkit-filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(2px 2px 1px black);
+          filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(2px 2px 1px black);
+}
+
+.game-nav .disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.game-nav img.btn-nav:hover:not(.disabled),
+.game-nav img.btn-nav.active {
+  -webkit-filter: saturate(415%) contrast(101%);
+          filter: saturate(415%) contrast(101%);
+}
+
+.game-nav img.btn-nav:hover:not(.disabled).delegate,
+.game-nav img.btn-nav.active.delegate {
+  -webkit-filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.game-nav .css-1dgudnz-MuiPopper-root-MuiTooltip-popper .MuiTooltip-tooltip {
+  margin-top: 0px;
+  width: 10rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid #ffb13bc9;
+  color: white;
+  font: normal bold 0.8rem Cinzel;
+  -webkit-box-shadow: 0 0px 10px 3px rgba(238, 255, 0, 0.466);
+          box-shadow: 0 0px 10px 3px rgba(238, 255, 0, 0.466);
+}
+
+.gamenav-icon-open {
+  z-index: 151;
+  position: fixed;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1201px) and (min-height: 901px) {
+  .gamenav-icon-open {
+    display: none;
+  }
+}
+
+#regionNavMenu {
+  background: #380000 !important;
+  -webkit-box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.856) !important;
+          box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.856) !important;
+  width: 8rem;
+  /* &.land {
+        background: #00415f !important;
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.856) !important;
+
+        .css-1km1ehz,
+        .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+
+            &:hover {
+                background: rgb(0, 23, 49);
+
+                .regionNavImg {
+                    filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+                }
+
+                .regionNavLab {
+                    color: gold;
+                }
+            }
+
+            .regionNavImg {
+                width: 2rem;
+                height: 2rem;
+                filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+
+                &.selected {
+                    filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+                }
+            }
+
+            .regionNavLab {
+                color: white;
+                font: normal bold 0.9rem Cinzel;
+
+                &.selected {
+                    color: gold;
+                }
+            }
+        }
+    } */
+}
+
+#regionNavMenu .css-1km1ehz,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#regionNavMenu .css-1km1ehz:hover,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+  background: #923c3c;
+}
+
+#regionNavMenu .css-1km1ehz:hover .regionNavImg,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavImg {
+  -webkit-filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+#regionNavMenu .css-1km1ehz:hover .regionNavLab,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavLab {
+  color: gold;
+}
+
+#regionNavMenu .css-1km1ehz .regionNavImg,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg {
+  width: 2rem;
+  height: 2rem;
+}
+
+#regionNavMenu .css-1km1ehz .regionNavImg.selected,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg.selected {
+  -webkit-filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+#regionNavMenu .css-1km1ehz .regionNavLab,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab {
+  color: white;
+  font: normal bold 0.9rem Cinzel;
+}
+
+#regionNavMenu .css-1km1ehz .regionNavLab.selected,
+#regionNavMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab.selected {
+  color: gold;
+}
+
+#regionNavMenu.disabled .regionNavImg,
+#regionNavMenu.disabled .regionNavLab {
+  opacity: 0.4;
+}
+
+#inventoryMenu,
+#handMenu,
+#cityMenu {
+  background: #380000 !important;
+  -webkit-box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.856) !important;
+          box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.856) !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* &.delegate {
+        background: #103d00 !important;
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.856) !important;
+
+        .css-1km1ehz,
+        .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+
+            &:hover {
+                background: rgb(60, 146, 64);
+
+                .regionNavImg {
+                    filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(2px 2px 1px black);
+                }
+
+                .regionNavLab {
+                    color: rgb(0, 255, 170);
+                }
+            }
+
+            .regionNavImg {
+                width: 2rem;
+                height: 2rem;
+                filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+
+                &.selected {
+                    filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%) drop-shadow(2px 2px 1px black);
+                }
+            }
+
+            .regionNavLab {
+                color: white;
+                font: normal bold 0.9rem Cinzel;
+
+                &.selected {
+                    color: rgb(0, 255, 170);
+                }
+            }
+        }
+    } */
+}
+
+#inventoryMenu .css-1km1ehz,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root,
+#handMenu .css-1km1ehz,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root,
+#cityMenu .css-1km1ehz,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#inventoryMenu .css-1km1ehz:hover,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover,
+#handMenu .css-1km1ehz:hover,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover,
+#cityMenu .css-1km1ehz:hover,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+  background: #923c3c;
+}
+
+#inventoryMenu .css-1km1ehz:hover .regionNavImg,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavImg,
+#handMenu .css-1km1ehz:hover .regionNavImg,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavImg,
+#cityMenu .css-1km1ehz:hover .regionNavImg,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavImg {
+  -webkit-filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+#inventoryMenu .css-1km1ehz:hover .regionNavLab,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavLab,
+#handMenu .css-1km1ehz:hover .regionNavLab,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavLab,
+#cityMenu .css-1km1ehz:hover .regionNavLab,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover .regionNavLab {
+  color: gold;
+}
+
+#inventoryMenu .css-1km1ehz .regionNavImg,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg,
+#handMenu .css-1km1ehz .regionNavImg,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg,
+#cityMenu .css-1km1ehz .regionNavImg,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg {
+  width: 2rem;
+  height: 2rem;
+}
+
+#inventoryMenu .css-1km1ehz .regionNavImg.selected,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg.selected,
+#handMenu .css-1km1ehz .regionNavImg.selected,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg.selected,
+#cityMenu .css-1km1ehz .regionNavImg.selected,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavImg.selected {
+  -webkit-filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+          filter: invert(10%) sepia(0%) saturate(500%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+#inventoryMenu .css-1km1ehz .regionNavLab,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab,
+#handMenu .css-1km1ehz .regionNavLab,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab,
+#cityMenu .css-1km1ehz .regionNavLab,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab {
+  margin-left: 1rem;
+  color: white;
+  font: normal bold 0.9rem Cinzel;
+}
+
+#inventoryMenu .css-1km1ehz .regionNavLab.selected,
+#inventoryMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab.selected,
+#handMenu .css-1km1ehz .regionNavLab.selected,
+#handMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab.selected,
+#cityMenu .css-1km1ehz .regionNavLab.selected,
+#cityMenu .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .regionNavLab.selected {
+  color: gold;
+}
+
+#inventoryMenu .disabled,
+#handMenu .disabled,
+#cityMenu .disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+#inventoryMenu.disabled .regionNavImg,
+#inventoryMenu.disabled .regionNavLab,
+#handMenu.disabled .regionNavImg,
+#handMenu.disabled .regionNavLab,
+#cityMenu.disabled .regionNavImg,
+#cityMenu.disabled .regionNavLab {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=gamenav.css.map */

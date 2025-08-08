@@ -1,0 +1,102 @@
+.lands-owner .content .scroll-content .page-content .land-table tr th {
+  font: normal bold 0.9rem Raleway;
+  color: gold;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td {
+  color: #ffbc00;
+  font: normal normal 1rem Raleway;
+  word-break: break-word;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .land-image {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .land-image:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .iconBtn {
+  padding: 10px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  opacity: 1.0;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .visitBtn {
+  background: #4160626b;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .visitBtn svg {
+  font-size: 30px;
+  color: #77fff4;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .visitBtn:hover {
+  background: #2f818f6b;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .visitBtn:hover svg {
+  color: #00fff2;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .stakeBtn {
+  background: #4262416b;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .stakeBtn svg {
+  font-size: 30px;
+  color: #77ff77;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .stakeBtn:hover {
+  background: #2f8f346b;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .stakeBtn:hover svg {
+  color: #00ff44;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .unstakeBtn {
+  background: #6241416b;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .unstakeBtn svg {
+  font-size: 30px;
+  color: #ff7777;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .unstakeBtn:hover {
+  background: #8f2f2f6b;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .unstakeBtn:hover svg {
+  color: #ff0000;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td.notAllowed {
+  pointer-events: none;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tr td .unstakableMessage {
+  color: #DFDFDD;
+  font: normal normal normal 13px Raleway;
+}
+
+.lands-owner .content .scroll-content .page-content .land-table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.confirmText {
+  color: white;
+  font: normal normal normal 20px Raleway;
+}
+/*# sourceMappingURL=lands-owner.css.map */

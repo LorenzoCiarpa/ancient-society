@@ -1,0 +1,13 @@
+.rbutton {
+  font: normal bold normal 0.7rem Optimus !important;
+  padding: 7px 14px !important;
+  min-width: 0px !important;
+  -webkit-box-shadow: 1px 1px 5px 1px black !important;
+          box-shadow: 1px 1px 5px 1px black !important;
+}
+
+.rbutton:hover, .rbutton:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+/*# sourceMappingURL=rbutton.css.map */

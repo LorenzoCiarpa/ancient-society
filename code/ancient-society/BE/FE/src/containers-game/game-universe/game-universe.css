@@ -1,0 +1,178 @@
+.game-universe .content .api-loading {
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.game-universe .content .api-loading .apiCallingGif {
+  width: 180px;
+  height: 120px;
+  -webkit-filter: drop-shadow(2px 4px 6px gold);
+          filter: drop-shadow(2px 4px 6px gold);
+}
+
+.game-universe .content .api-loading .loader {
+  margin-top: 20px;
+  font: normal bold 15px Raleway;
+  letter-spacing: 2px;
+  color: gold;
+  -webkit-animation: smokeOut 1.5s ease-in-out infinite alternate;
+          animation: smokeOut 1.5s ease-in-out infinite alternate;
+}
+
+.game-universe .content .api-loading .loader:before {
+  content: "Loading";
+}
+
+@-webkit-keyframes smokeOut {
+  100% {
+    opacity: 0.08;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    letter-spacing: 4px;
+  }
+}
+
+@keyframes smokeOut {
+  100% {
+    opacity: 0.08;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    letter-spacing: 4px;
+  }
+}
+
+.game-universe .content .scroll-content .page-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game-universe .content .scroll-content .page-content .visit-desc {
+  color: #dfdfdd;
+  font: normal normal normal 14px Raleway;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0rem;
+}
+
+.game-universe .content .scroll-content .page-content .universe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0px;
+  opacity: 0.6;
+  position: relative;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view .world-img {
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  cursor: pointer;
+  width: 150px;
+  height: 100px;
+  -webkit-filter: drop-shadow(0px 0px 5px #a7a7a7);
+          filter: drop-shadow(0px 0px 5px #a7a7a7);
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view .world-name {
+  margin-top: 5px;
+  color: #dfdfdd;
+  font: normal normal normal 15px Raleway;
+  cursor: pointer;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view .world-name b {
+  font-size: 17px;
+  margin: 0px 5px;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view.home {
+  opacity: 1.0;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view.home .world-img {
+  -webkit-filter: drop-shadow(0px 0px 5px #ffbc00);
+          filter: drop-shadow(0px 0px 5px #ffbc00);
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view.home .world-name {
+  color: #ffbc00;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view:hover {
+  opacity: 1.0;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view:hover .world-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: drop-shadow(0px 0px 10px #ffbc00);
+          filter: drop-shadow(0px 0px 10px #ffbc00);
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view:hover .world-name {
+  color: #ffbc00;
+}
+
+.game-universe .content .scroll-content .page-content .universe .world-view .home-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 20%);
+          transform: translate(-50%, 20%);
+  -webkit-filter: drop-shadow(0px 0px 5px black);
+          filter: drop-shadow(0px 0px 5px black);
+}
+/*# sourceMappingURL=game-universe.css.map */

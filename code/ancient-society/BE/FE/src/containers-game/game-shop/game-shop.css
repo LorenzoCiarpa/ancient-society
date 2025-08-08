@@ -1,0 +1,62 @@
+.game-shop {
+  color: white;
+}
+
+.game-shop .scroll-content .tab-content .shop-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-shop .scroll-content .tab-content .lottery-tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-shop .scroll-content .tab-content .next-draws {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.game-shop .scroll-content .tab-content .next-draws span.draw {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  font: normal 0.8rem Raleway;
+  color: #FFB13B;
+  text-transform: uppercase;
+}
+
+.game-shop .scroll-content .tab-content .next-draws span.draw p {
+  margin: 0;
+  color: white;
+}
+/*# sourceMappingURL=game-shop.css.map */

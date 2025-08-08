@@ -1,0 +1,47 @@
+.rpaginationpanel {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    padding: 5px 0px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .page-info-text {
+        font: normal bold normal 1rem Cormorant;
+        color: goldenrod;
+
+        margin-right: 30px;
+
+        a {
+            margin: 0px 5px;
+
+            &:nth-child(1) {
+                color: white;
+            }
+
+            &:nth-child(2) {
+                color: white;
+            }
+
+            &:nth-child(3) {
+                color: white;
+            }
+        }
+    }
+
+    .previousPageBtn,
+    .nextPageBtn {
+        cursor: pointer;
+        width: 8px;
+        height: 17px;
+        background-image: url("../../../assets/basic/table/paginationBtn.png");
+        margin-right: 30px;
+
+        &.nextPageBtn {
+            transform: rotate(180deg);
+        }
+    }
+}

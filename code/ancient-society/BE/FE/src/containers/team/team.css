@@ -1,0 +1,110 @@
+.team {
+  padding-top: 10vmax;
+}
+
+.team h2 {
+  margin: 0;
+  font: normal normal normal 3.4rem Cinzel;
+  color: #FFB13B;
+}
+
+.team .container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.team .member {
+  margin-top: 100px;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .team .member {
+    margin-bottom: 50px;
+  }
+}
+
+.team .member h3 {
+  margin: 0;
+  font: normal normal bold 1.2rem Raleway;
+  color: #FFB13B;
+  text-transform: uppercase;
+}
+
+.team .member p {
+  margin: 0;
+  font: normal normal normal 0.6rem Raleway;
+  color: #DFDFDD;
+  text-transform: uppercase;
+}
+
+.team .pfp {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 3px solid #DFDFDD;
+}
+
+.team .social-icon {
+  margin-top: 15px;
+}
+
+.team .social-icon:hover {
+  opacity: 0.8;
+}
+
+.team .call-to-action {
+  margin-top: 200px;
+}
+
+.team .call-to-action h2 {
+  font: normal normal normal 3rem Cinzel;
+  margin-bottom: 30px;
+  color: #FFB13B;
+  white-space: pre-line;
+}
+
+.team .call-to-action .btn-a {
+  border: 3px solid #FFB13B;
+  color: #FFB13B;
+  padding: 1.5rem 4rem;
+  width: 60px;
+  height: 18px;
+  background: none;
+  font: normal normal normal 1.8rem Cinzel;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+.team .call-to-action .btn-span {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.team .call-to-action .btn-a:hover {
+  color: #295F90;
+  background: #FFB13B;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=team.css.map */

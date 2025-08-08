@@ -1,0 +1,201 @@
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #882B21;
+  padding: 2.5vw 0;
+}
+
+.info .building {
+  height: auto;
+  max-height: 400px;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px #DFDFDD solid;
+}
+
+@media screen and (max-width: 700px) {
+  .info .building {
+    display: none;
+  }
+}
+
+.info .container {
+  width: 45%;
+  margin-left: 3vw;
+}
+
+@media screen and (max-width: 700px) {
+  .info .container {
+    margin-top: 5px;
+    width: 95%;
+    margin-left: 0;
+  }
+}
+
+.info .container .container-2 {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: normal normal normal 0.8rem Raleway;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .info .container .container-2 {
+    font-size: 1rem;
+  }
+}
+
+.info .container .container-2 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .container .container-2 .c2-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info .container .container-2 .c2-row p {
+  margin-left: 4px;
+}
+
+.info .container .container-2 hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info .container .c3-headline {
+  font: normal normal normal 1.2rem Cinzel;
+  color: #DFDFDD;
+}
+
+.info .container .container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 5px;
+}
+
+.info .container .container-3 img {
+  height: auto;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.info .container .container-3 span {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px 0px;
+  font: normal normal bold 0.9rem Cinzel;
+}
+
+@media screen and (max-width: 700px) {
+  .info .container .container-3 span {
+    font-size: 1.1rem;
+  }
+}
+
+.info .container .container-3 .enough {
+  color: #4cd155;
+}
+
+.info .container .container-3 .missing {
+  color: gold;
+}
+
+.info .container .container-fee {
+  font: normal normal normal 1.4vh Raleway;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.info .container .container-fee p img {
+  height: 15px;
+  width: 15px;
+  margin-top: 3px;
+}
+
+.info .container .container-fee a {
+  font: normal normal normal 1.5vh Raleway;
+  color: green;
+  font-weight: 700;
+}
+
+.info .container .container-fee div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info .container .container-fee span {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px 0px;
+  font: normal normal bold 0.7rem Cinzel;
+}
+
+@media screen and (max-width: 700px) {
+  .info .container .container-fee span {
+    font-size: 1rem;
+  }
+}
+
+.info .container .container-fee img {
+  height: auto;
+  width: 20px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=popupgameinfo.css.map */

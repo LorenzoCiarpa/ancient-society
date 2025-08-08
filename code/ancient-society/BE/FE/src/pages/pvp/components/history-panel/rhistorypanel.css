@@ -1,0 +1,167 @@
+.rhistorypanel {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 1028px) {
+  .rhistorypanel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.rhistorypanel .history-list {
+  width: 305px;
+  min-inline-size: 305px;
+  height: 100%;
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+}
+
+@media screen and (max-width: 1028px) {
+  .rhistorypanel .history-list {
+    width: 100%;
+  }
+}
+
+.rhistorypanel .history-list .error-inventory {
+  text-align: center;
+  font: normal normal normal 1.4rem Optimus;
+}
+
+.rhistorypanel .history-list:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.rhistorypanel .history-container {
+  width: calc(100% - 305px - 1rem);
+  height: 100%;
+  min-width: 350px;
+  margin-left: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+@media screen and (max-width: 1028px) {
+  .rhistorypanel .history-container {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.rhistorypanel .history-container .notSelectedBattleDataText {
+  text-align: center;
+  font: normal normal normal 1.2rem Cormorant;
+  color: darkgray;
+}
+
+.rhistorypanel .history-container .battle-replay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-header .battle-result-info {
+  margin: 0rem .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-header .battle-result-info .battle-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal normal 1rem Optimus;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-header .battle-result-info .battle-result a {
+  margin: 0px 10px;
+  color: gold;
+  width: 40px;
+  max-width: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-header .battle-result-info .vs-mark {
+  font: normal normal normal 1.2rem Optimus;
+  color: darkgray;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-content {
+  max-height: calc(100% - 150px);
+  height: calc(100% - 150px);
+  width: 100%;
+  margin-top: 1rem;
+  min-height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.rhistorypanel .history-container .battle-replay .replay-content .battle-field {
+  width: 100%;
+}
+
+.rhistorypanel .history-container .replay-footer {
+  text-align: center;
+  font: normal normal normal 1.5rem Optimus;
+  position: absolute;
+  height: 2.5rem;
+  bottom: 0;
+  width: calc(100% + 2rem);
+  margin: -1rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 0.5rem;
+}
+
+.rhistorypanel .history-container .replay-footer .won {
+  color: #64ff64;
+}
+
+.rhistorypanel .history-container .replay-footer .lost {
+  color: #ff6464;
+}
+/*# sourceMappingURL=rhistorypanel.css.map */

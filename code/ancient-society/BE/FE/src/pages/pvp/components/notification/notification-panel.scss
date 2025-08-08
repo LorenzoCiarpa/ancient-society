@@ -1,0 +1,36 @@
+img.pvpPoints,
+img.warPoints {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+span.pvpPoints,
+span.warPoints {
+    margin: 0 5px;
+    font: normal normal normal 1rem Optimus;
+}
+span.pvpPoints{
+    color: rgb(255 100 100);
+}
+span.warPoints{
+    color: gold;
+}
+.notification-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    .desc {
+        font: normal normal normal 1rem Cinzel;
+    }
+}
+
+.notification-empty{
+    font: normal normal normal 1rem Cinzel;
+    width: 100%;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,85 @@
+.nav-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  position: relative;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-scroll .center, .nav-scroll .left, .nav-scroll .right {
+    display: none;
+  }
+}
+
+.nav-scroll .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  position: relative;
+}
+
+.nav-scroll .center {
+  max-width: 300px;
+  margin: 0 22px 0 22px;
+  margin-top: -50px;
+}
+
+.nav-scroll .bottom {
+  margin-top: 45vh;
+}
+
+.nav-scroll .bottom .btn-a {
+  width: 120px;
+  height: 40px;
+  font-size: 25px;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+.nav-scroll .bottom .btn-span {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.nav-scroll .bottom .btn-a:hover {
+  background: #c8c8c8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (max-width: 900px) {
+  .nav-scroll .bottom {
+    margin-top: 50vh;
+  }
+  .nav-scroll .bottom .btn-a {
+    width: 80px;
+    height: 30px;
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=mainbuttons.css.map */

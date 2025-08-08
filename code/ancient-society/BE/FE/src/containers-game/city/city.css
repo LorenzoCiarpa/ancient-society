@@ -1,0 +1,382 @@
+.guest-city-banner {
+  position: fixed;
+  bottom: 0px;
+  width: calc(100% - 1rem);
+  background: rgba(116, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 51;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  /*     .bannerDescription {
+        color: white;
+        font: normal normal 1rem Raleway;
+
+        a {
+            padding: 0rem 1rem;
+            color: gold;
+            font: normal bold 1.1rem Cinzel;
+        }
+    } */
+}
+
+.guest-city-banner .bannerDescription {
+  color: white;
+  font: normal normal 1rem Raleway;
+}
+
+.guest-city-banner .bannerCityName {
+  padding: 0rem 1rem;
+  color: gold;
+  font: normal bold 1.1rem Cinzel;
+}
+
+.guest-city-banner .returnBtn {
+  position: absolute;
+  right: 5px;
+  padding: 5px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  opacity: 1.0;
+  background: white;
+}
+
+.guest-city-banner .returnBtn svg {
+  font-size: 20px;
+  color: black;
+}
+
+.guest-city-banner .returnBtn:hover {
+  background: black;
+}
+
+.guest-city-banner .returnBtn:hover svg {
+  color: white;
+}
+
+.guest-city {
+  z-index: 50;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.guest-city .birds {
+  z-index: 3;
+  position: absolute;
+  pointer-events: none;
+}
+
+.guest-city .birds .bird {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: fly 1s steps(8, end) infinite;
+          animation: fly 1s steps(8, end) infinite;
+}
+
+.guest-city .birds .bird.bird0 {
+  background-image: url("./assets/birds/0.png");
+}
+
+.guest-city .birds .bird.bird45 {
+  background-image: url("./assets/birds/45.png");
+}
+
+.guest-city .birds .bird.bird-45 {
+  background-image: url("./assets/birds/-45.png");
+}
+
+.guest-city .birds .bird.bird90 {
+  background-image: url("./assets/birds/90.png");
+}
+
+.guest-city .birds .bird.bird-90 {
+  background-image: url("./assets/birds/-90.png");
+}
+
+.guest-city .birds .bird.bird135 {
+  background-image: url("./assets/birds/135.png");
+}
+
+.guest-city .birds .bird.bird-135 {
+  background-image: url("./assets/birds/-135.png");
+}
+
+.guest-city .birds .bird.bird180 {
+  background-image: url("./assets/birds/180.png");
+}
+
+.guest-city .dolphins {
+  z-index: 3;
+  position: absolute;
+  pointer-events: none;
+}
+
+.guest-city .dolphins .dolphin {
+  width: 124px;
+  height: 50px;
+  -webkit-animation: swim 1s steps(7, end);
+          animation: swim 1s steps(7, end);
+  background-image: url("./assets/dolphin.png");
+}
+
+@-webkit-keyframes swim {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -868px;
+  }
+}
+
+@keyframes swim {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -868px;
+  }
+}
+
+@-webkit-keyframes fly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -400px;
+  }
+}
+
+@keyframes fly {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -400px;
+  }
+}
+
+.guest-city .map {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.guest-city .map img {
+  position: absolute;
+}
+
+.guest-city .buildings {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.guest-city .buildings .buildingPlace {
+  position: absolute;
+}
+
+.guest-city .buildings .buildingPlace .slot {
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  margin: 28% 25% 27% 30%;
+  width: 45%;
+  height: 45%;
+  -webkit-transform: rotate(32deg) skew(-25deg);
+          transform: rotate(32deg) skew(-25deg);
+  border-radius: 5px;
+}
+
+.guest-city .buildings .buildingPlace .slot.show:hover {
+  color: black;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.guest-city .buildings .buildingPlace .buildingImage {
+  z-index: 1;
+}
+
+.notVisible {
+  display: none;
+}
+
+.my-nfts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.my-nfts-container.show {
+  z-index: 100;
+}
+
+.my-nft {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.my-nft .nft-view {
+  width: 80%;
+  max-width: 800px;
+  padding: 2rem 0rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 15px 1px black;
+          box-shadow: 0px 0px 15px 1px black;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .my-nft .nft-view {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.my-nft .nft-view .menu-icon-close {
+  cursor: pointer;
+  z-index: 251;
+  position: absolute;
+  left: 1rem;
+  top: 3rem;
+  width: 35px;
+  right: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .my-nft .nft-view .menu-icon-close {
+    display: none;
+  }
+}
+
+.my-nft .nft-view .left-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .my-nft .nft-view .left-view {
+    width: 100%;
+    padding: 5rem 0px;
+  }
+}
+
+.my-nft .nft-view .left-view .nft-image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ff8b0094;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .my-nft .nft-view .left-view .nft-image {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.my-nft .nft-view .right-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  padding: 0px 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .my-nft .nft-view .right-view {
+    width: calc(100% - 2rem);
+  }
+}
+
+.my-nft .nft-view .right-view .nft-name {
+  margin: 1rem 0px;
+  color: #ffbc00;
+  font: normal normal normal 20px Raleway;
+}
+
+.my-nft .nft-view .right-view .nft-name a {
+  color: #ffbc00;
+}
+
+.my-nft .nft-view .right-view .nft-description {
+  color: #d0d0d0;
+  font: normal normal normal 14px Raleway;
+  text-indent: 1rem;
+  line-height: 1.2;
+}
+
+.my-nft .nft-view .right-view .nft-desc {
+  color: gray;
+  font: normal normal normal 15px Raleway;
+  margin: 1rem 0px;
+}
+/*# sourceMappingURL=city.css.map */

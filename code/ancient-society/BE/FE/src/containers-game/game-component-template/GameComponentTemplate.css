@@ -1,0 +1,68 @@
+.classNameForComponent .content {
+  position: relative;
+}
+
+.classNameForComponent .content .api-loading {
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.classNameForComponent .content .api-loading .apiCallingGif {
+  width: 180px;
+  height: 120px;
+  -webkit-filter: drop-shadow(2px 4px 6px gold);
+          filter: drop-shadow(2px 4px 6px gold);
+}
+
+.classNameForComponent .content .api-loading .loader {
+  margin-top: 20px;
+  font: normal bold 15px Raleway;
+  letter-spacing: 2px;
+  color: gold;
+  -webkit-animation: smokeOut 1.5s ease-in-out infinite alternate;
+          animation: smokeOut 1.5s ease-in-out infinite alternate;
+}
+
+.classNameForComponent .content .api-loading .loader:before {
+  content: "Loading";
+}
+
+@-webkit-keyframes smokeOut {
+  100% {
+    opacity: 0.08;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    letter-spacing: 4px;
+  }
+}
+
+@keyframes smokeOut {
+  100% {
+    opacity: 0.08;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    letter-spacing: 4px;
+  }
+}
+
+.classNameForComponent .scroll-content {
+  min-height: 300px;
+}
+/*# sourceMappingURL=GameComponentTemplate.css.map */

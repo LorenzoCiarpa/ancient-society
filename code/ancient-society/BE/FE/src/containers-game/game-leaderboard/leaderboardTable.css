@@ -1,0 +1,87 @@
+table.tableLeaderboard {
+  table-layout: fixed;
+}
+
+.tableLeaderboard {
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableLeaderboard thead {
+  font: normal normal bold 1rem Raleway;
+  color: gold;
+  text-transform: uppercase;
+}
+
+.tableLeaderboard thead th {
+  padding: 1rem 0;
+}
+
+.tableLeaderboard tbody tr {
+  color: #ffb13b;
+  font: normal normal normal 1rem Raleway;
+}
+
+.tableLeaderboard tbody td {
+  padding: 5px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tableLeaderboard .avatar {
+  height: 50px;
+  width: 50px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.tableLeaderboard .avatar:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+.tableLeaderboard .city {
+  width: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .tableLeaderboard .city {
+    width: 4.5rem;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.tableLeaderboard .emblem:hover {
+  -webkit-transform: scale(4);
+          transform: scale(4);
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  -webkit-filter: invert(68%) sepia(98%) saturate(415%) hue-rotate(333deg) brightness(102%) contrast(101%);
+          filter: invert(68%) sepia(98%) saturate(415%) hue-rotate(333deg) brightness(102%) contrast(101%);
+}
+
+.pagination img {
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pagination .page-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+/*# sourceMappingURL=leaderboardTable.css.map */

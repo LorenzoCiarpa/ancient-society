@@ -1,0 +1,290 @@
+.filters {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filters .MuiPaper-root {
+  width: 90%;
+  background-color: #161615;
+  color: white;
+  border: 1px solid white;
+}
+
+.filters .MuiPaper-root .MuiCardActions-root {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.filters .MuiPaper-root .MuiCardActions-root p {
+  font: normal normal normal 1.2rem Cinzel;
+}
+
+.filters .MuiPaper-root .MuiButtonBase-root {
+  color: white;
+}
+
+.filters .MuiPaper-root .MuiCollapse-wrapperInner {
+  background-color: #222222;
+}
+
+.filters .MuiPaper-root .MuiCardContent-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filters .filters-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.301);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.filters .filters-container img.mrkt-filter {
+  z-index: 10;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #dbdbdb;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.filters .filters-container img.mrkt-filter:hover:not(.filter-active) {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #fafafa;
+}
+
+.filters .filters-container .mrkt-filter.filter-active {
+  border: 3px solid #FFB13B;
+}
+
+.filters .filters-container *:disabled {
+  cursor: not-allowed;
+}
+
+.filters .filters-inventory {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filters .filters-inventory input {
+  max-width: 200px;
+}
+
+.filters img.mrkt-utils {
+  width: 35px;
+  -webkit-filter: invert(93%) sepia(77%) saturate(0%) hue-rotate(326deg) brightness(102%) contrast(101%);
+          filter: invert(93%) sepia(77%) saturate(0%) hue-rotate(326deg) brightness(102%) contrast(101%);
+  cursor: pointer;
+}
+
+.filters img.mrkt-utils:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.table-content {
+  height: -webkit-fill-available;
+  overflow: auto;
+}
+
+.marketplace-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 1px;
+}
+
+.marketplace-table thead {
+  font: normal normal normal 0.8rem Raleway;
+  color: #FFB13B;
+  text-transform: uppercase;
+}
+
+.marketplace-table tbody tr {
+  color: #ffb13b;
+  font: normal normal normal 0.8rem Raleway;
+}
+
+.marketplace-table tbody td {
+  width: 15vw;
+  border-bottom: 1px solid #dfdfdd;
+  border-top: 1px solid #dfdfdd;
+}
+
+.marketplace-table .actionButton {
+  width: 50px;
+}
+
+.marketplace-table .canceled > td,
+.marketplace-table .expired > td {
+  opacity: 0.8;
+  border-bottom: 1px solid #FF1900;
+  border-top: 1px solid #FF1900;
+}
+
+.marketplace-table .sold > td {
+  opacity: 0.8;
+  border-bottom: 1px solid #4BCE54;
+  border-top: 1px solid #4BCE54;
+}
+
+.marketplace-table .onsale > td {
+  border-bottom: 1px solid #f3b8bb;
+  border-top: 1px solid #f3b8bb;
+  border-color: rgba(255, 255, 0, 0.4);
+  color: #ffbd5a;
+}
+
+.marketplace-table .owner > td {
+  opacity: 0.8;
+  border-bottom: 1px solid #FF1900;
+  border-top: 1px solid #FF1900;
+}
+
+.marketplace-table td.cell-canceled,
+.marketplace-table td.cell-expired {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FF1900;
+}
+
+.marketplace-table td.cell-sold {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4BCE54;
+}
+
+.marketplace-table .mrkt-res,
+.marketplace-table .mrkt-inv-bk,
+.marketplace-table .mrkt-inv {
+  width: 30px;
+}
+
+.marketplace-table span.mrkt-inv-bk {
+  height: 30px;
+  color: white;
+}
+
+.marketplace-table .th-price img {
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .marketplace-table .th-price img {
+    display: none;
+  }
+}
+
+.marketplace-table tr:not(.owner):hover > td {
+  border-bottom: 1px solid #FEB03B;
+  border-top: 1px solid #FEB03B;
+}
+
+.marketplace-table .btn-a.marketplace-btn-buy.miss-ancien {
+  background-color: #865e22;
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.marketplace-table .btn-a.marketplace-btn-buy {
+  margin: auto 30px;
+  -webkit-transform: perspective(510px) rotateX(40deg);
+          transform: perspective(510px) rotateX(40deg);
+  padding: 8px 15px;
+  width: 30px;
+  height: 20px;
+  font: normal normal bold 1rem Cinzel;
+  background-color: #FFB13B;
+  color: #161615;
+  border: 0.1px solid #000;
+}
+
+@media screen and (max-width: 800px) {
+  .marketplace-table .btn-a.marketplace-btn-buy {
+    margin: auto 10px;
+    padding: 4px 7px;
+    font-size: 0.9rem;
+  }
+}
+
+.pages,
+.pagination {
+  margin-top: 10px;
+  -webkit-filter: invert(68%) sepia(98%) saturate(415%) hue-rotate(333deg) brightness(102%) contrast(101%);
+          filter: invert(68%) sepia(98%) saturate(415%) hue-rotate(333deg) brightness(102%) contrast(101%);
+}
+
+.pages img,
+.pagination img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pages .page-disabled,
+.pagination .page-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.mrkt-icon {
+  width: 25px;
+  cursor: pointer;
+}
+
+.mrkt-icon.again {
+  -webkit-filter: invert(68%) sepia(98%) saturate(415%) hue-rotate(333deg) brightness(102%) contrast(101%);
+          filter: invert(68%) sepia(98%) saturate(415%) hue-rotate(333deg) brightness(102%) contrast(101%);
+}
+
+.mrkt-icon.cancel,
+.mrkt-icon.remove {
+  -webkit-filter: invert(19%) sepia(100%) saturate(6237%) hue-rotate(7deg) brightness(99%) contrast(101%);
+          filter: invert(19%) sepia(100%) saturate(6237%) hue-rotate(7deg) brightness(99%) contrast(101%);
+}
+/*# sourceMappingURL=table.css.map */

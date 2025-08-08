@@ -1,0 +1,409 @@
+.game-leaderboard .content .scroll-content {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-leaderboard .content .scroll-content .page-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content {
+  height: -webkit-fill-available;
+  overflow: auto;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .lb-table-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .specSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop {
+    padding: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop {
+    padding: 0.3rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .specBack {
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .specBack {
+    width: 5rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .back-1st {
+  width: 12rem;
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .back-1st {
+    width: 7rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .back-2nd {
+  width: 8rem;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .back-2nd {
+    width: 5rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .back-3rd {
+  width: 8rem;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .back-3rd {
+    width: 5rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .specAvatar {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-1st {
+  top: 4.65rem;
+  width: 7rem;
+  height: 7rem;
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-1st {
+    top: 4.5rem;
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-1st {
+    top: 2.75rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-2nd {
+  top: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-2nd {
+    top: 2.2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-2nd {
+    top: 1.4rem;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-3rd {
+  top: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-3rd {
+    top: 2.2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .avatar-3rd {
+    top: 1.4rem;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .specRanking {
+  position: absolute;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-1st {
+  width: 2rem;
+  right: 2.5rem;
+  bottom: -0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-1st {
+    width: 2rem;
+    right: 0.1rem;
+    bottom: -0.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-1st {
+    width: 1.3rem;
+    right: 0.1rem;
+    bottom: -0.2rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-2nd {
+  width: 2rem;
+  right: 2rem;
+  bottom: -1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-2nd {
+    width: 1.5rem;
+    right: 0rem;
+    bottom: -0.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-2nd {
+    width: 1.2rem;
+    right: 0.2rem;
+    bottom: -0.5rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-3rd {
+  width: 2rem;
+  right: 2rem;
+  bottom: -1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-3rd {
+    width: 1.5rem;
+    right: 0rem;
+    bottom: -0.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionTop .rank-3rd {
+    width: 1.2rem;
+    right: -0.1rem;
+    bottom: -0.3rem;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom {
+    width: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specEmblem {
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specEmblem:hover {
+  -webkit-transform: scale(4);
+          transform: scale(4);
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specEmblem:hover {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specEmblem:hover {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specCity {
+  margin-left: 1rem;
+  width: 5rem;
+  color: #efb864;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font: normal normal bold 1rem Raleway;
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specCity {
+    width: auto;
+    max-width: 5rem;
+    margin-left: 0;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specExp {
+  margin-left: 1rem;
+  color: #efb864;
+  font: normal normal bold 1rem Raleway;
+}
+
+@media screen and (max-width: 800px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specExp {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-leaderboard .content .scroll-content .page-content .tab-content .specPanel .sectionBottom .specExp {
+    margin-left: 0;
+  }
+}
+
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child .myRanking,
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child .myName,
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child .myExp,
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child .myImage {
+  margin-left: 15px;
+  color: #ffb13b;
+  font: normal bold 1rem Cinzel;
+}
+
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child .myName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-leaderboard .content .scroll-content .page-content .myRankingPanel div:first-child .myImage > img {
+  width: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=game-leaderboard.css.map */

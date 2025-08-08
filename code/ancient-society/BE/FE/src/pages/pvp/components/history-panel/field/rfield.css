@@ -1,0 +1,71 @@
+.rfield {
+  width: 100%;
+  height: calc(100% - 144px - 4rem);
+  overflow: auto;
+  border-radius: 5px;
+  background: rgba(200, 100, 0, 0.1);
+  position: relative;
+}
+
+.rfield .turn-nav {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.rfield .turnMark {
+  cursor: pointer;
+  margin: 0px 1rem;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: normal normal normal 1rem Arial;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rfield .turnMark:hover, .rfield .turnMark.current {
+  background-color: green;
+}
+
+.rfield .turnMark.ready {
+  background: rgba(0, 255, 0, 0.4);
+}
+
+.rfield .map {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(200, 100, 0, 0.5) 0%, black 100%);
+}
+
+.rfield .readyBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 5px !important;
+  font: normal bold normal 0.6rem Optimus !important;
+  color: white;
+  background: #643200;
+}
+
+.rfield .readyBtn:hover {
+  color: #643200;
+  background: white;
+}
+
+.rfield .readyBtn svg {
+  font-size: 15px;
+}
+/*# sourceMappingURL=rfield.css.map */

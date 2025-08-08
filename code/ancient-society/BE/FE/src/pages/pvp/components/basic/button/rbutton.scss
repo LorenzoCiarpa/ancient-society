@@ -1,0 +1,12 @@
+.rbutton {
+    font: normal bold normal 0.7rem Optimus !important;
+
+    padding: 7px 14px !important;
+    min-width: 0px !important;
+    box-shadow: 1px 1px 5px 1px black !important;
+
+    &:hover,
+    &:focus {
+        box-shadow: none !important;
+    }
+}

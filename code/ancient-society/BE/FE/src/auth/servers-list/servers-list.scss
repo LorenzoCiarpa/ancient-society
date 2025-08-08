@@ -1,0 +1,156 @@
+.server-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // @media screen and (max-width: 600px) {
+    //     width: 100vw;
+    //     height: 100vh;
+    // }
+
+    .head{
+        z-index: 1;
+        height: 200px;
+        width: 750px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../assets-ui/ui-header.webp");
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 600px) {
+            width: 100vw;
+            height: 200px;
+        }
+
+        img {
+            padding-top: 20px;
+            width: 320px;
+            @media screen and (max-width: 600px) {
+                width: 240px;
+                padding-top: 40px;
+            }
+        }
+    }
+
+    .body{
+        z-index: -1;
+        margin-top: -22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 750px;
+        height: 350px;
+        background-image: url("../../assets-ui/ui-borders.webp");
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 600px) {
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+        }
+
+            .server-list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                color: white;
+
+                @media screen and (max-width: 600px) {
+                    // justify-content: space-around;
+                }
+
+                .server{
+                    position: relative;
+                    margin-top: 10px;
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+
+                    @media screen and (max-width: 600px) {
+                        flex-direction: column;
+                    }
+        
+                    img{width: 180px;}
+                    .server-desc{
+                        width: 220px;
+                        margin: 20px;
+                        text-align: center;
+                        font: normal normal 1rem Cormorant;
+
+                        @media screen and (max-width: 600px) {
+                            width: 320px;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    &:not(:first-child):before{
+                    // &:after{
+                        content: "";
+                        top: 0px;
+                        position: absolute;
+                        width: 80%;
+                        border-bottom: 1px solid #dcb84e;
+                    }
+                }
+            }
+    }
+
+    .footer {
+        z-index: 1;
+        height: 200px;
+        width: 750px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../assets-ui/ui-footer.webp");
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+
+        h2 {
+            margin: 1.2vw auto;
+            font: normal normal bold 1.6rem Cinzel;
+            color: white;
+        }
+
+        img {
+            padding-top: 20px;
+            width: 320px;
+        }
+    }
+        
+        
+    //     .socialIcons{
+    //         z-index: 9999;
+    //         position: absolute;
+    //         bottom: -55px;
+    //         width: 100%;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    
+    //         img{
+    //             margin: 10px;
+    //             filter: invert(100%) sepia(0%) saturate(7016%) hue-rotate(52deg) brightness(10%) contrast(74%);
+    //         }
+    //     }
+    // }
+
+}
+
+.gold{
+    color: gold;
+}

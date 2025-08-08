@@ -1,0 +1,668 @@
+/*
+*********************************************************************************************
+*********************************************************************************************
+****************************** New UI Implementation Version 2 ******************************
+******************************************9/15/2022******************************************
+*********************************************************************************************
+*********************************************************************************************
+*/
+/* Font Import */
+@font-face {
+    font-family: 'Optimus';
+    src        : url("../../assets-ui/fonts/OptimusPrinceps.ttf");
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src        : url("../../assets-ui/fonts/CormorantInfant-Medium.ttf");
+}
+
+/* Default Scroll Bar Style Improvement */
+/* Works on Firefox */
+* {
+    scrollbar-width    : thin;
+    scrollbar-color    : rgba(150, 100, 50, 0.5) rgba(0, 0, 0, 0);
+    // scrollbar-gutter: stable both-edges;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width : 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 100, 50, 0.5);
+    border-radius   : 3px;
+}
+
+/* SideBar */
+.sidebar {
+    position                     : absolute;
+    display                      : flex;
+    flex-direction               : column;
+    /* width                     : 20vw;
+    min-width                    : 300px;
+
+    @media screen and (max-width : 1200px) {
+        margin                   : 0;
+        width                    : 100%;
+    }
+
+    @media screen and (max-height: 00px) {
+        margin                   : 0;
+        width                    : 100%;
+    } */
+}
+
+/* basic styles */
+.notVisible {
+    display: none !important;
+}
+
+.notAllowed {
+    opacity       : 0.5;
+    pointer-events: none;
+}
+
+.notAllowedText {
+    font-size: 0.9rem;
+    color    : gray;
+}
+
+/* Game Popup Component */
+/* popup overlay */
+.myGame {
+    position: absolute;
+    width   : 100%;
+    height  : 100%;
+
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+
+    z-index                : 100;
+    overflow               : auto;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter        : blur(2px);
+
+    /* game component */
+    .game-component {
+        width    : 70%;
+        max-width: 1400px;
+
+        @media screen and (max-width: 1200px) {
+            width : 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-height: 900px) {
+            width : 100%;
+            height: 100%;
+        }
+
+        /* container */
+        .game-container {
+            width : 100%;
+            height: fit-content;
+
+            filter: drop-shadow(2px 4px 6px black);
+
+            @media screen and (max-width: 1200px) {
+                height: 100%;
+            }
+
+            @media screen and (max-height: 900px) {
+                height: 100%;
+            }
+
+            /* header */
+            .header {
+                width   : 100%;
+                height  : 70px;
+                position: relative;
+
+                @media screen and (max-width: 1200px) {
+                    height: 50px;
+                }
+
+                @media screen and (max-height: 900px) {
+                    height: 50px;
+                }
+
+                .gameComponentHeaderBack {
+                    position: absolute;
+                    width   : 100%;
+                    height  : 100%;
+                    top     : 0;
+                    left    : 0;
+                    z-index : -3;
+                }
+
+                .gameComponentHeaderBorder1 {
+                    position: absolute;
+                    width   : 100%;
+                    height  : 100%;
+                    top     : 0;
+                    left    : 0;
+                    z-index : -2;
+                }
+
+                .gameComponentHeaderBorder2 {
+                    position: absolute;
+                    width   : 100%;
+                    height  : 100%;
+                    top     : 0;
+                    left    : 0;
+                    z-index : -1;
+                }
+
+                .title {
+                    position  : absolute;
+                    top       : 50%;
+                    left      : 50%;
+                    width     : 100%;
+                    text-align: center;
+                    transform : translate(-50%, -50%);
+
+                    font                   : normal bold 2rem Optimus;
+                    background             : linear-gradient(0deg, rgba(123, 86, 5, 1) 0%, rgba(207, 170, 82, 1) 29%, rgba(132, 102, 4, 1) 52%, rgba(249, 234, 151, 1) 94%);
+                    -webkit-text-fill-color: transparent;
+                    background-clip        : text;
+                    filter                 : drop-shadow(1px 2px 5px black);
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media screen and (max-height: 900px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            /* content */
+            .content {
+                width   : 100%;
+                height  : fit-content;
+                position: relative;
+
+                @media screen and (max-width: 1200px) {
+                    height: calc(100% - 60px);
+                }
+
+                @media screen and (max-height: 900px) {
+                    height: calc(100% - 60px);
+                }
+
+                &::before {
+                    content   : "";
+                    position  : absolute;
+                    width     : 100%;
+                    height    : 100%;
+                    top       : 0;
+                    left      : 0;
+                    z-index   : -2;
+                    background: rgba(0, 0, 0, 0.5);
+
+                    border    : 12px solid rgba(0, 0, 0, 0.5);
+                    box-sizing: border-box;
+                }
+
+                .gameComponentContentBorder {
+                    position: absolute;
+                    width   : 100%;
+                    height  : 100%;
+                    top     : 0;
+                    left    : 0;
+                    z-index : -1;
+                }
+
+                .scroll-content {
+                    // property
+                    width  : calc(100% - 24px);
+                    height : 500px;
+                    padding: 1rem 12px;
+
+                    display       : flex;
+                    flex-direction: column;
+                    align-items   : center;
+
+                    @keyframes scrollAppear {
+                        0% {
+                            height: 0px;
+                        }
+
+                        100% {
+                            height: 500px;
+                        }
+                    }
+
+                    animation: scrollAppear 0.25s ease-in-out 0s 1;
+
+                    @media screen and (max-width: 1200px) {
+                        height   : calc(100% - 2rem);
+                        animation: none;
+                    }
+
+                    @media screen and (max-height: 900px) {
+                        height   : calc(100% - 2rem);
+                        animation: none;
+                    }
+
+                    /* sticky header tab navbar */
+                    .tab-navs {
+                        position: sticky;
+                        width   : 100%;
+
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
+
+                        .tab-nav {
+                            cursor : pointer;
+                            padding: 0.4rem 1rem;
+
+                            color: #dcb84e;
+                            font : normal normal 1.2rem Cormorant;
+
+                            @media screen and (max-width: 450px) {
+                                font-size: 15px;
+                            }
+
+                            border-top-right-radius: 3px;
+                            border-top-left-radius : 3px;
+                            border                 : 1px solid transparent;
+                            border-bottom          : 2px solid transparent;
+
+                            &:hover {
+                                background   : rgba(0, 0, 0, 0.5);
+                                border       : 1px solid #c5a43f33;
+                                border-bottom: 2px solid transparent;
+                            }
+
+                            &.active {
+                                background   : black;
+                                border       : 1px solid #c5a33f73;
+                                border-bottom: 2px solid black;
+                            }
+                        }
+
+                        &::after {
+                            content : "";
+                            position: absolute;
+                            bottom  : 0;
+                            left    : 0;
+                            width   : 100%;
+                            height  : 2px;
+
+                            background-image   : url("../../assets-ui/game-component/line.jpg");
+                            background-position: 50% 0;
+                            background-repeat  : no-repeat;
+                            background-size    : cover;
+                            z-index            : -1;
+                        }
+                    }
+
+                    /* page content */
+                    .page-content {
+                        width      : 100%;
+                        height     : -webkit-fill-available;
+                        overflow   : auto;
+                        padding-top: 1rem;
+                        display    : flex;
+
+                        &.flex-column {
+                            flex-direction: column;
+                        }
+                    }
+
+                    /* pagination footer */
+                    .pagination-panel {
+                        position: sticky;
+                        width   : 100%;
+                        padding : 10px 0px 5px 0px;
+
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : flex-end;
+
+                        .paginationBtn {
+                            cursor          : pointer;
+                            width           : 11px;
+                            height          : 17px;
+                            background-image: url("../../assets-ui/game-component/pagination_arrow.png");
+                            margin          : 0px 10px;
+
+                            &.prevBtn {}
+
+                            &.nextBtn {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* footer */
+            .footer {
+                width : 100%;
+                height: 40px;
+
+                @media screen and (max-width: 1200px) {
+                    position: absolute;
+                    bottom  : 0;
+                    height  : 10px;
+                    overflow: hidden;
+                }
+
+                @media screen and (max-height: 900px) {
+                    position: absolute;
+                    bottom  : 0;
+                    height  : 10px;
+                    overflow: hidden;
+                }
+
+                .footer-container {
+                    position: relative;
+                    width   : 100%;
+                    height  : 100%;
+
+                    .gameComponentFooterBack {
+                        position: absolute;
+                        width   : 100%;
+                        height  : 100%;
+                        top     : 0;
+                        left    : 0;
+                        z-index : -2;
+                    }
+
+                    .gameComponentFooterMark {
+                        position : absolute;
+                        width    : auto;
+                        height   : 60px;
+                        top      : 0;
+                        left     : 50%;
+                        transform: translate(-50%, 0px);
+                        z-index  : -1;
+
+                        @media screen and (max-width: 1200px) {
+                            display: none;
+                        }
+
+                        @media screen and (max-height: 900px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* other effects - including load effect */
+.api-loading {
+    position: absolute;
+    width   : calc(100% - 10px);
+    height  : calc(100% - 10px);
+
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.4);
+    border    : 5px solid rgba(0, 0, 0, 0.5);
+    z-index   : 100;
+    font-size : 30px;
+
+    .apiCallingGif {
+        width : 180px;
+        height: 120px;
+        filter: drop-shadow(2px 4px 6px gold);
+    }
+
+    .loader {
+        margin-top    : 20px;
+        font          : normal bold 15px Raleway;
+        letter-spacing: 2px;
+        color         : gold;
+        animation     : smokeOut 1.5s ease-in-out infinite alternate;
+
+        &:before {
+            content: "Loading";
+        }
+    }
+
+    @keyframes smokeOut {
+        100% {
+            opacity       : 0.08;
+            filter        : blur(5px);
+            letter-spacing: 4px;
+        }
+    }
+}
+
+.apiCallLoading {
+    transform    : rotateZ(45deg);
+    perspective  : 1000px;
+    border-radius: 50%;
+    width        : 100px;
+    height       : 100px;
+    color        : rgb(251, 255, 0);
+}
+
+.apiCallLoading:before,
+.apiCallLoading:after {
+    content      : '';
+    display      : block;
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    width        : inherit;
+    height       : inherit;
+    border-radius: 50%;
+    transform    : rotateX(70deg);
+    animation    : 1s spin linear infinite;
+}
+
+.apiCallLoading:after {
+    color          : #ff9900;
+    transform      : rotateY(70deg);
+    animation-delay: .4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes rotateccw {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    100% {
+        box-shadow: .2em 0px 0 0px currentcolor;
+    }
+
+    12% {
+        box-shadow: .2em .2em 0 0 currentcolor;
+    }
+
+    25% {
+        box-shadow: 0 .2em 0 0px currentcolor;
+    }
+
+    37% {
+        box-shadow: -.2em .2em 0 0 currentcolor;
+    }
+
+    50% {
+        box-shadow: -.2em 0 0 0 currentcolor;
+    }
+
+    62% {
+        box-shadow: -.2em -.2em 0 0 currentcolor;
+    }
+
+    75% {
+        box-shadow: 0px -.2em 0 0 currentcolor;
+    }
+
+    87% {
+        box-shadow: .2em -.2em 0 0 currentcolor;
+    }
+}
+
+.game-on-loading {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    z-index         : 9999;
+    margin          : 0 auto;
+    height          : 100vh;
+    width           : 100vw;
+    background-color: #182532;
+    background-size : cover;
+
+    .sk-cube-grid {
+        width : 40px;
+        height: 40px;
+        margin: 100px auto;
+    }
+
+    .sk-cube-grid .sk-cube {
+        width            : 33%;
+        height           : 33%;
+        background-color : white;
+        float            : left;
+        -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        animation        : sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    }
+
+    .sk-cube-grid .sk-cube1 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay        : 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube2 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay        : 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube3 {
+        -webkit-animation-delay: 0.4s;
+        animation-delay        : 0.4s;
+    }
+
+    .sk-cube-grid .sk-cube4 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay        : 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube5 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay        : 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube6 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay        : 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube7 {
+        -webkit-animation-delay: 0s;
+        animation-delay        : 0s;
+    }
+
+    .sk-cube-grid .sk-cube8 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay        : 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube9 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay        : 0.2s;
+    }
+
+    @-webkit-keyframes sk-cubeGridScaleDelay {
+
+        0%,
+        70%,
+        100% {
+            -webkit-transform: scale3D(1, 1, 1);
+            transform        : scale3D(1, 1, 1);
+        }
+
+        35% {
+            -webkit-transform: scale3D(0, 0, 1);
+            transform        : scale3D(0, 0, 1);
+        }
+    }
+
+    @keyframes sk-cubeGridScaleDelay {
+
+        0%,
+        70%,
+        100% {
+            -webkit-transform: scale3D(1, 1, 1);
+            transform        : scale3D(1, 1, 1);
+        }
+
+        35% {
+            -webkit-transform: scale3D(0, 0, 1);
+            transform        : scale3D(0, 0, 1);
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Toastify__toast-container--top-left,
+    .Toastify__toast-container--top-center,
+    .Toastify__toast-container--top-right {
+        bottom: 0% !important;
+        top   : unset !important;
+    }
+}
+
+.MuiButton-root.btnUI {
+    margin          : 5px;
+    height          : 60px;
+    width           : 150px;
+    color           : white;
+    font            : normal normal 1.2rem Cormorant;
+    letter-spacing  : 2px;
+    background-image: url("../../assets-ui/ui-button.webp");
+    background-size : cover;
+
+    &:hover {
+        opacity  : 0.9;
+        transform: scale(1.01);
+    }
+}
+
+.MuiButton-root.btnUI.secondary {
+    background-image: url("../../assets-ui/ui-button-2.webp");
+}

@@ -1,0 +1,421 @@
+.rleaderboardpanel {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  .panel-tabs {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 1px solid rgba(255, 255, 0, 0.2);
+
+    .panel-tab {
+      cursor: pointer;
+
+      &.active {
+        color: white;
+        background-color: #ffbc0080;
+      }
+
+      &:hover {
+        color: white;
+        background-color: #ffbc0050 !important;
+      }
+
+      &.myLeague {
+        background: rgba(150, 255, 0, 0.3)
+      }
+
+      height: 100%;
+      padding: 0px 10px;
+      margin: 0px 5px;
+
+      display: flex;
+      align-items: center;
+
+      font: normal normal normal 1rem Optimus;
+      color: #ffbc00;
+
+      background: rgba(0, 0, 0, 0.5);
+
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+
+      border: 1px solid rgba(255, 255, 0, 0.2);
+      border-bottom: none;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  .panel-container {
+    width: 100%;
+    height: calc(100% - 40px);
+
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      overflow: auto;
+    }
+
+    .left-panel {
+      width: 60%;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        height: 500px;
+      }
+
+      .leaderboard-table {
+        .rank-col {
+          width: 10%;
+          min-width: 50px;
+          max-width: 50px;
+          width: 50px;
+        }
+
+        .isUser-col {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .isUser-cell {
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .rank-cell {
+          font: normal normal normal 1rem Optimus;
+        }
+
+        .name-col {
+          width: 30%;
+          min-width: 110px;
+        }
+
+        .empty-col {
+          width: 0px;
+        }
+
+        .name-cell {
+          // font: normal normal normal 0.8rem Optimus;
+        }
+
+        .avatar-col {
+          width: calc(40% - 50px);
+          min-width: 110px;
+        }
+
+        .avatar-cell {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          position: relative;
+
+          img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.8)) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.8));
+
+            &:nth-child(2) {
+              margin-left: 10px;
+            }
+
+            &:hover {
+              transform: scale(1.4);
+            }
+          }
+
+          .rank-badge {
+            position: absolute;
+            width: 25px;
+            height: 40px;
+            left: -10px;
+            margin: 0px !important;
+            top: 0px;
+          }
+        }
+
+        .wp-col {
+          width: 20%;
+          min-width: 80px;
+        }
+
+        .wp-cell {
+          display: flex;
+          font: normal normal normal 1.1rem Optimus;
+        }
+      }
+    }
+
+    .right-panel {
+      width: 40%;
+      padding-left: 1rem;
+
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        padding: 0rem;
+        margin-top: 1rem;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+
+        overflow: auto;
+
+        background: rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+
+        box-shadow: 2px 2px 5px 2px black;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        font: normal normal normal 1rem Cormorant;
+        color: white;
+
+        .current-league-text {
+          a {
+            padding: 0px 5px;
+
+            font-family: Optimus;
+            font-size: 1.1rem;
+            color: #ffbc00;
+          }
+        }
+
+        .current-league-info {
+          padding: 1rem;
+
+          .api-loading {
+            transition: none;
+            height: 270px;
+          }
+
+          .league-avatar {
+            transition: none;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+
+            img {
+              border-radius: 50%;
+              width: 100px;
+              height: 100px;
+            }
+          }
+
+          .league-attr {
+            padding: 5px 0px;
+
+            display: flex;
+            align-items: center;
+
+            a {
+              padding: 0px 5px;
+
+              font-family: Optimus;
+              font-size: 1rem;
+              color: #ffbc00;
+            }
+          }
+
+          .league-trophy-text {
+            width: 100%;
+            text-align: right;
+
+            color: rgb(150 255 0);
+          }
+
+          .league-trophies {
+            width: 100%;
+            padding: 5px 0px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            .league-trophy {
+              display: flex;
+              align-items: center;
+
+              padding: 5px;
+
+              .league-trophy-img {
+                width: 40px;
+                height: 40px;
+
+                padding: 3px;
+
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.5);
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              .league-trophy-info {
+                margin-left: 5px;
+                width: 60px;
+
+                .league-trophy-name {
+                  color: #ffbc00;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  width: 60px;
+                  font: normal bold normal 0.8rem Cormorant;
+                }
+
+                .league-trophy-quantity {
+                  color: white;
+                  font: normal bold normal 0.9rem Cormorant;
+                }
+              }
+            }
+          }
+        }
+
+        .current-user-text {
+          padding-top: 1rem;
+
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+          a {
+            padding: 0px 5px;
+
+            font-family: Optimus;
+            font-size: 1.1rem;
+            color: #ffbc00;
+          }
+        }
+
+        .user-avatar {
+          padding: 10px;
+          position: relative;
+          display: flex;
+
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: auto;
+          }
+
+          .rank-badge {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: calc(50% + 10px);
+          }
+        }
+
+        .current-user-info {
+          padding: 0rem 1rem;
+
+          .user-attr {
+            padding: 5px 0px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+            a {
+              padding: 10px 5px;
+
+              font-family: Optimus;
+              font-size: 1.2rem;
+              color: #ffbc00;
+            }
+          }
+
+          .vs-history {
+            a:nth-child(1) {
+              color: lime;
+            }
+
+            a:nth-child(2) {
+              color: rgb(255, 50, 50);
+            }
+          }
+
+          .most-used-cards-text {
+            width: 100%;
+            text-align: right;
+            margin-top: 5px;
+            color: rgb(150 255 0);
+          }
+
+          .most-used-cards {
+            width: 100%;
+            padding: 5px 0px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            .most-used-card {
+              display: flex;
+              align-items: center;
+
+              padding: 10px;
+
+              .most-used-card-img {
+                width: 60px;
+                height: 60px;
+
+                padding: 3px;
+
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 5px;
+                background: rgba(0, 0, 0, 0.5);
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              .most-used-card-info {
+                margin-left: 5px;
+
+                .most-used-card-name {
+                  color: #ffbc00;
+                  font: normal bold normal 0.8rem Cormorant;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.leaderboard-warpoints-img{
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}

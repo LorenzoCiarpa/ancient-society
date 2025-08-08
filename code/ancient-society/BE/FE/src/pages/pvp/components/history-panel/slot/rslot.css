@@ -1,0 +1,43 @@
+.rslot-history {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(transparent 60%, rgba(0, 255, 100, 0.14) 100%);
+  -webkit-box-shadow: 1px 1px 0px 1px black;
+          box-shadow: 1px 1px 0px 1px black;
+}
+
+.rslot-history.legendary {
+  width: 100px;
+  height: 100px;
+}
+
+.rslot-history:hover {
+  border: 1px solid rgba(0, 255, 100, 0.3);
+  background: radial-gradient(transparent 60%, rgba(0, 255, 100, 0.3) 100%);
+}
+
+.rslot-history.fill:hover {
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  background: radial-gradient(transparent 60%, rgba(255, 0, 0, 0.3) 100%);
+}
+
+.rslot-history.negative {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(transparent 60%, rgba(255, 0, 0, 0.14) 100%);
+}
+
+.rslot-history.negative:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(transparent 60%, rgba(255, 0, 0, 0.3) 100%);
+}
+
+.rslot-history img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=rslot.css.map */

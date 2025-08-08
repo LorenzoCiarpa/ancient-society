@@ -1,0 +1,104 @@
+.inventory{
+    z-index: 101;
+    display: flex;
+    height: 150px;
+    width: 250px;
+    margin-left: 70px;
+
+    @media screen and (max-width: 1200px) {
+        // margin-left: 0;
+        display: none;
+    }
+    @media screen and (max-height: 900px) {
+        // margin-left: 0;
+        display: none;
+    }
+    
+    .profile-img-container{
+        position: relative;
+        margin-right: 20px;
+
+        @media screen and (max-width: 1200px) {
+            margin-right: 0;
+        }
+
+        img.profile{
+            // filter: drop-shadow(1px 1px 0px #ffb13b) drop-shadow(-1px -1px 0px #ffb13b) drop-shadow(-1px 1px 0px #ffb13b) drop-shadow(1px -1px 0px #ffb13b);
+            height: 130px;
+            width: 130px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 50%;
+            background-image: url("../../assets-ui/ui-propic.webp");
+            background-size: contain;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+        }
+    }
+    
+    .profile-img-container::after{
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 125px;
+        z-index: 1001;
+        height: 40px;
+        width: 110px;
+        background-image: url("../../assets-ui/ui-emblem.webp");
+        background-size: contain;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 800px) {
+            height: 40px;
+        }
+    }
+    
+    
+
+    .resources{
+        display: flex;
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 10px;
+        padding-top: 20px;
+
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+
+        span.resource{
+            margin-right: 20px;
+            display: flex;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 1.6rem;
+                margin-left: 3vw;
+                margin-top: 1rem;
+            }
+
+            img{
+                z-index: 101;
+                margin: 0;
+                height: 45px;
+                width: 45px;
+            }
+
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 45px;
+                width: 120px;
+                background-image: url("../../assets-ui/ui-resource.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0;
+                margin-left: -20px;
+                font: normal normal normal 1.4rem Optimus;
+                color: #DFDFDD;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.explanations {
+  padding-bottom: 50px;
+}
+
+.explanations h2 {
+  font: normal normal normal 3rem Cinzel;
+  color: #882B21;
+}
+
+.explanations .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+
+.explanations .explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #882B21;
+  width: 90vw;
+  max-width: 500px;
+  margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 1000px) {
+  .explanations .explanation {
+    width: 30vw;
+  }
+}
+
+.explanations .text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.explanations img {
+  width: 100%;
+}
+
+.explanations h3 {
+  margin: 15px auto;
+  width: 80%;
+  width: 100%;
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .explanations h3 {
+    font-size: 1.6rem;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .explanations h3 {
+    font-size: 1.4rem;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+}
+
+.explanations p {
+  margin: 5px auto;
+  width: 70%;
+  font: normal normal normal 4vw Raleway;
+}
+
+@media screen and (min-width: 501px) {
+  .explanations p {
+    width: 50%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .explanations p {
+    font-size: 1.2rem;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .explanations p {
+    font-size: 0.9rem;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .explanations p {
+    font-size: 1.2rem;
+  }
+}
+
+.explanations p::before {
+  content: '• ';
+}
+/*# sourceMappingURL=explanations.css.map */

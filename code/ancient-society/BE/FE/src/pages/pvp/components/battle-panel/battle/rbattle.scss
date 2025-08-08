@@ -1,0 +1,163 @@
+.rbattle {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .opp-avatar {
+        width: 60px;
+        height: 60px;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    color: white;
+
+    .battle-info {
+        width: calc(100% - 85px);
+        padding: 0rem 10px;
+
+        display: flex;
+        flex-direction: column;
+
+        .opp-name {
+            margin-top: 3px;
+            font: normal normal normal 1.1rem Optimus;
+            color: rgb(200, 200, 200);
+
+            .nagetive {
+                font: normal normal normal 0.8rem Optimus;
+                color: gold;
+            }
+        }
+
+        .battle-attr {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .img-warPoints {
+                width: 20px;
+            }
+
+            .battle-record {
+                display: flex;
+                align-items: flex-end;
+
+                font-size: 0.8rem;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                font: normal normal normal 1rem Optimus;
+
+                a {
+                    margin: 0px 3px;
+
+                    color: rgb(255, 100, 100);
+                }
+            }
+
+            .battle-flow-time {
+                display: flex;
+                align-items: center;
+                font: normal normal normal 1rem Optimus;
+                width: 70px;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                a {
+                    font-size: 0.8rem;
+                    margin-left: 3px;
+                    margin-top: 4px;
+                }
+
+                a.ready {
+                    color: rgb(100 255 100);
+                }
+
+                a.ongoing {
+                    color: gold;
+                }
+            }
+        }
+
+        .battle-status-tags {
+            width: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+            .battle-status-tag {
+                width: fit-content;
+                padding: 3px 5px;
+                margin: 6px 3px 0px 3px;
+
+                font: normal normal normal 0.7rem Cormorant;
+                color: white;
+
+                border-radius: 5px;
+                box-shadow: 1px 1px 0px 1px black;
+
+                &.status1 {
+                    background: rgb(0, 50, 0);
+                }
+
+                &.status2 {
+                    background: rgb(50, 50, 50);
+                }
+
+                &.status3 {
+                    background: rgb(50, 50, 0);
+                }
+            }
+        }
+    }
+
+    .battle-status-badge {
+        width: 25px;
+        height: 25px;
+
+        color: rgb(255 150 0);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        filter: drop-shadow(2px 2px 1px black);
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .double-check-ready {
+            position: absolute;
+            top: 5px;
+        }
+    }
+}

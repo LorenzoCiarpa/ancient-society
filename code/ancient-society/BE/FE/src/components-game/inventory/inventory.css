@@ -1,0 +1,125 @@
+.inventory {
+  z-index: 101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  width: 250px;
+  margin-left: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inventory {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .inventory {
+    display: none;
+  }
+}
+
+.inventory .profile-img-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inventory .profile-img-container {
+    margin-right: 0;
+  }
+}
+
+.inventory .profile-img-container img.profile {
+  height: 130px;
+  width: 130px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-image: url("../../assets-ui/ui-propic.webp");
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.inventory .profile-img-container::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 125px;
+  z-index: 1001;
+  height: 40px;
+  width: 110px;
+  background-image: url("../../assets-ui/ui-emblem.webp");
+  background-size: contain;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  .inventory .profile-img-container::after {
+    height: 40px;
+  }
+}
+
+.inventory .resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .inventory .resources {
+    display: none;
+  }
+}
+
+.inventory .resources span.resource {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .inventory .resources span.resource {
+    font-size: 1.6rem;
+    margin-left: 3vw;
+    margin-top: 1rem;
+  }
+}
+
+.inventory .resources span.resource img {
+  z-index: 101;
+  margin: 0;
+  height: 45px;
+  width: 45px;
+}
+
+.inventory .resources span.resource p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 45px;
+  width: 120px;
+  background-image: url("../../assets-ui/ui-resource.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-left: -20px;
+  font: normal normal normal 1.4rem Optimus;
+  color: #DFDFDD;
+}
+/*# sourceMappingURL=inventory.css.map */

@@ -1,0 +1,149 @@
+.game-cities .content .scroll-content .page-content .city-table tr th {
+  font: normal bold 0.9rem Raleway;
+  color: gold;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td {
+  color: #ffbc00;
+  font: normal normal 1rem Raleway;
+  word-break: break-word;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .avatar {
+  width: 50px;
+  height: 50px;
+  border: 1px solid gray;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .avatar:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .iconBtn {
+  padding: 10px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  opacity: 1.0;
+  background: #4262416b;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .infoIcon svg {
+  font-size: 30px;
+  color: #afbeff;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .infoIcon:hover {
+  background: #b4c1fc6b;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .infoIcon:hover svg {
+  color: #98abff;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .visitIcon svg {
+  font-size: 30px;
+  color: #77ff77;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .visitIcon:hover {
+  background: #2f8f346b;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tr td .visitIcon:hover svg {
+  color: #00ff44;
+}
+
+.game-cities .content .scroll-content .page-content .city-table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* popup modals */
+.visit-city-info {
+  font: normal normal 1.2rem Raleway;
+}
+
+.visit-city-info span {
+  color: #ffbc00;
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .delegation-list {
+    max-height: 300px;
+  }
+}
+
+.delegation-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delegation-info:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+
+.delegation-info:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.delegation-info .delegateBtn {
+  padding: 10px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  opacity: 0.2;
+  background: #4262416b;
+  margin-left: 10px;
+  cursor: default;
+}
+
+.delegation-info .delegateBtn.show {
+  opacity: 1.0;
+}
+
+.delegation-info .delegateBtn svg {
+  font-size: 25px;
+  color: #77ff77;
+}
+
+.delegation-info .delegateBtn:hover {
+  background: #2f8f346b;
+}
+
+.delegation-info .delegateBtn:hover svg {
+  color: #00ff44;
+}
+
+.delegation-info .delegationType {
+  color: white;
+  font: normal bold 1rem Cinzel;
+  margin-left: 10px;
+}
+
+.delegation-info .delegationType .notAllowedText {
+  font: normal bold 0.8rem Cinzel;
+  color: gray;
+}
+
+.enterCityBtn {
+  font-size: 0.9rem !important;
+  background: #4262416b !important;
+  color: #77ff77 !important;
+  border: 1px solid #77ff77 !important;
+}
+
+.enterCityBtn:hover {
+  background: #2f8f346b !important;
+  color: #00ff44 !important;
+}
+/*# sourceMappingURL=gamecities.css.map */

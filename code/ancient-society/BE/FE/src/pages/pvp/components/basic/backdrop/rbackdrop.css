@@ -1,0 +1,29 @@
+.pvp-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.pvp-backdrop .MuiDialog-paper {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pvp-backdrop .MuiDialog-paper .pvp-backdrop-loading-bar {
+  color: #c8c8c8;
+}
+
+.pvp-backdrop .MuiDialog-paper .pvp-backdrop-text-content {
+  margin-top: 1rem;
+  font: normal normal normal 0.9rem Raleway;
+  color: #c8c8c8 !important;
+}
+/*# sourceMappingURL=rbackdrop.css.map */

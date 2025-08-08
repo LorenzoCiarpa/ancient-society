@@ -1,0 +1,25 @@
+.runitlist {
+  width: calc(100% - 60px);
+  height: 72px;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  border-radius: 5px;
+  margin: 1rem 0rem 1rem 10px;
+}
+
+.runitlist.positive {
+  border: 1px solid darkgreen;
+  background: rgba(0, 100, 0, 0.2);
+}
+
+.runitlist.negative {
+  border: 1px solid #640000;
+  background: rgba(100, 0, 0, 0.2);
+}
+/*# sourceMappingURL=runitlist.css.map */

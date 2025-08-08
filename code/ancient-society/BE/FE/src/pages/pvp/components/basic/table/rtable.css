@@ -1,0 +1,73 @@
+.rtable {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rtable .rtable-body {
+  width: 100%;
+  height: -webkit-fill-available;
+  overflow: auto;
+}
+
+.rtable .rtable-body table {
+  width: 100%;
+}
+
+.rtable .rtable-body table .empty-row {
+  font: normal bold normal 1rem Optimus;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  border: none !important;
+}
+
+.rtable .rtable-body table .empty-row:hover {
+  background-color: transparent !important;
+  cursor: default;
+}
+
+.rtable .rtable-body table thead {
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #282828;
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+}
+
+.rtable .rtable-body table thead tr th {
+  border: none;
+  font: normal bold normal 0.8rem Optimus;
+  color: #ffbc00;
+  padding: 10px;
+}
+
+.rtable .rtable-body table tbody tr {
+  cursor: pointer;
+}
+
+.rtable .rtable-body table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.rtable .rtable-body table tbody tr.my-info {
+  background: radial-gradient(#77ff7799, transparent);
+}
+
+.rtable .rtable-body table tbody tr td {
+  font: normal bold normal 1.0rem Optimus;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+/*# sourceMappingURL=rtable.css.map */

@@ -1,0 +1,110 @@
+.rmenu {
+  width: calc(50% - 2rem);
+  height: calc(33.3vh - 2rem);
+  margin: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .rmenu {
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+.rmenu:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+}
+
+.rmenu .section-back-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 80%);
+  mask-image: radial-gradient(rgba(0, 0, 0, 0.5), transparent 80%);
+  z-index: -1;
+}
+
+.rmenu .menu-back-image {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.rmenu .menu-back-image:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px black;
+          box-shadow: 2px 2px 5px 2px black;
+}
+
+.rmenu .info-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 220px;
+  margin-left: 1rem;
+}
+
+.rmenu .info-panel .section-title {
+  cursor: pointer;
+  padding: 5px 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font: normal normal normal 1rem Optimus;
+  border-radius: 3px;
+  background: #323232;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rmenu .info-panel .section-title:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.rmenu .info-panel .section-description {
+  cursor: default;
+  margin-top: 1rem;
+  padding: 5px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 100%;
+  max-height: 250px;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font: normal normal normal 0.9rem Cormorant;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.rmenu .info-panel .section-description:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/*# sourceMappingURL=rmenu.css.map */

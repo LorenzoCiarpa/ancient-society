@@ -1,0 +1,274 @@
+.mintContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../../assets-game/game-bk.svg');
+
+    .mintContainerSelect{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        max-width: 700px;
+
+        @media screen and (max-width: 700px) {
+            width: 90vw;
+        }
+
+        .mintContainerLogo{
+            margin: 10px auto;
+            width: 300px;
+        }
+        
+        h1{
+            width: 100%;
+            text-align: center;
+            font: normal 3rem Cinzel;
+            color: white;
+        }
+
+        .selectMint{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-image: url('../../assets-game/nfts-bk.svg');
+
+            .mintType{
+                display: flex;
+                align-items: center;
+                justify-items: center;
+
+                height: 25vw;
+                max-height: 300px;
+                width: 25vw;
+                max-width: 300px;
+                background-color: #161615;
+                border: 1px solid #FFB13B;
+                margin: 5px;
+
+                cursor: pointer;
+
+                @media screen and (max-width: 700px) {
+                    height: 85vw;
+                    width: 85vw;
+                }
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .mintTypeName{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    position: absolute;
+                    
+                    width: 25vw;
+                    max-width: 300px;
+
+                    background-color: #161615;
+                    color: white;
+                    opacity: 0.8;
+
+                    @media screen and (max-width: 700px) {
+                        width: 85vw;
+                    }
+
+                    p{
+                        font: normal 1.6rem Cinzel; 
+                        color: #FFB13B;
+                        text-align: center;
+                        margin: 0;
+                    }
+
+                    .bundleText{
+                        font-weight: bold;
+                        color: #FFB13B;
+                    }
+                    .previewPrice{
+                        color: white;
+                    }
+                }
+            }
+
+            .bundle{border: 1px solid #2A5F90;}
+
+            .mintType:not(.bundle){
+                opacity: 0.5;
+            }
+
+        }
+
+        //Animation Hover
+        .selectMint {
+            pointer-events: none;
+        } .selectMint > * {
+            pointer-events: auto;
+            transition: transform 0.7s, opacity 0.5s ease-in-out;
+        } .selectMint:hover > * {
+            border: 1px solid #FFB13B;
+            opacity: 0.5;
+        } .selectMint:hover > *:hover {
+            border: 1px solid #2A5F90;
+            transform: scale(1.01);
+            opacity: 1;
+        }
+    } //mintContainerSelect
+
+
+    .mintSelected{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .mintSelectedLogo{
+            margin: 10px auto;
+            width: 300px;
+
+            @media screen and (max-width: 500px) {
+                width: 350px;
+            }
+        }
+    
+        .mintSelectedContainer{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+            width: 400px;
+            padding: 30px;
+            background-color: #161615;
+            color: white;
+
+            @media screen and (max-width: 500px) {
+                width: 330px;
+                padding: 10px;
+            }
+
+            .mintSelectedBack{
+                position: absolute;
+                align-self: flex-start;
+                font-family: Raleway;
+                font-size: 0.8rem;
+                cursor: pointer;
+
+                img{
+                    border: none;
+                    width: 30px;
+                }
+
+                .disabled{
+                    opacity: 0.5;
+                }
+            }
+
+            h2{
+                font-family: Cinzel;
+                font-size: 1.8rem;
+                color: FFB13B;
+                margin: 5px;
+            }
+
+            img{
+                width: 300px;
+                border: 1px solid #FFB13B;
+                margin-bottom: 10px;
+            }
+
+            .mintSettings{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 65%;
+                @media screen and (max-width: 500px) {
+                    width: 90%;
+                }
+
+                input{
+                    height: 26px;
+                    width: 30px;
+                    padding: 5px;
+                    background-color: #161615;
+                    text-align: center;
+                    font: normal normal normal 1.2rem Raleway;
+                    color: #FFB13B;
+                    border: 1px solid #FFB13B;
+                    outline: none;
+                }
+        
+                .btnQuantity{
+                    margin: 5px;
+                    height: 20px;
+                    background-color: #2e2e2c;
+                    font: normal normal normal 0.8rem Raleway;
+                    color: #FFB13B;
+                    border: 1px solid #FFB13B;
+                }
+        
+                select{
+                    height: 38px;
+                    width: 120px;
+                    padding: 5px;
+                    background-color: #161615;
+                    font: normal normal normal 0.8rem Raleway;
+                    color: #FFB13B;
+                    border: 1px solid #FFB13B;
+                    outline: none;
+                }
+
+            }
+
+        
+
+            .btnMint{
+                margin-top: 30px;
+                height: 58px;
+                width: 180px;
+                background-color: #2e2e2c;
+                font: normal normal normal 1.6rem Cinzel;
+                color: #FFB13B;
+                border: 1px solid #FFB13B;
+            }
+
+            button, select{cursor: pointer;}
+
+            button:hover{
+                opacity: 0.9;
+                transform: scale(1.02);
+                transition: transform 0.7s, opacity 0.5s ease-in-out;
+            }
+
+            .soldout{
+                border: 1px solid #161615;
+            }
+
+            .soldout:hover{
+                cursor: not-allowed;
+                opacity: none;
+                transform: none;
+            }
+
+
+
+            .supplyAvailable{
+                font-size: 0.8rem;
+                color: white;
+            }
+        }
+
+    }
+
+}

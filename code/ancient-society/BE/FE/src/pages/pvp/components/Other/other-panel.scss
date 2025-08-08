@@ -1,0 +1,177 @@
+.rotherpanel {
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    position: relative;
+    font-family: Cormorant;
+
+    .faq-row {
+        border: 1px solid #2e2e2e !important;
+        padding-left: 1rem !important;
+    }
+
+    .faq-title {
+        padding-left: .5rem !important;
+    }
+
+}
+
+.rotherpanel-container {
+
+    .musicSetting {
+        width: calc(100% - 2rem);
+        margin: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 600px) {
+            width: calc(100% - 4rem);
+        }
+
+        .muteBtn {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: 600px) {
+                justify-content: center;
+            }
+
+            .setting-span {
+                font: normal normal normal 1.3rem Optimus;
+                color: gold;
+                font-weight: 800;
+                padding-top: .5rem;
+            }
+
+            .css-1jaw3da {
+                .css-9l3uo3 {
+                    color: white;
+                    font: normal bold 0.8rem Cinzel;
+                }
+
+                .css-1ju1kxc {
+                    background: gray;
+                }
+
+                .css-1nr2wod.Mui-checked {
+                    color: gold;
+                }
+
+                .css-1nr2wod.Mui-checked+.MuiSwitch-track {
+                    background: gold;
+                }
+            }
+
+            .css-j204z7-MuiFormControlLabel-root {
+                .MuiFormControlLabel-label {
+                    color: white;
+                    font: normal bold 0.8rem Cinzel;
+                }
+
+                .css-1yjjitx-MuiSwitch-track {
+                    background: gray;
+                }
+
+                .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+                    color: gold;
+                }
+
+                .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+                    background: gold;
+                }
+            }
+        }
+
+        .musicVolume {
+            display: flex;
+            flex-direction: row;
+            margin: 0.5rem 0rem;
+            padding: 0.5rem 0rem;
+            align-items: center;
+
+            .desc {
+                text-align: center;
+                width: 30%;
+                color: white;
+                font: normal bold 0.9rem Cinzel;
+            }
+
+            .inputs {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .css-exkjcx {
+                    margin: 0rem 1rem;
+                    color: gold;
+
+                    &.Mui-disabled {
+                        color: gray;
+                    }
+                }
+
+                .css-187mznn-MuiSlider-root {
+                    margin: 0rem 1rem;
+                    color: gold;
+
+                    &.Mui-disabled {
+                        color: gray;
+                    }
+                }
+
+                svg {
+                    color: white;
+                }
+            }
+        }
+
+        .effectVolume {
+            display: flex;
+            flex-direction: row;
+            margin: 0.5rem 0rem;
+            padding: 0.5rem 0rem;
+            align-items: center;
+            justify-content: space-between;
+
+            .desc {
+                text-align: center;
+                width: 30%;
+                color: white;
+                font: normal bold 0.9rem Cinzel;
+            }
+
+            .inputs {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .css-exkjcx {
+                    margin: 0rem 1rem;
+                    color: gold;
+
+                    &.Mui-disabled {
+                        color: gray;
+                    }
+                }
+
+                .css-187mznn-MuiSlider-root {
+                    margin: 0rem 1rem;
+                    color: gold;
+
+                    &.Mui-disabled {
+                        color: gray;
+                    }
+                }
+
+                svg {
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

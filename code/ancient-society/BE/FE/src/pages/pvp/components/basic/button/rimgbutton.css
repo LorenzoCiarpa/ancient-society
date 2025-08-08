@@ -1,0 +1,78 @@
+.rimgbutton {
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.rimgbutton::before, .rimgbutton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 100%;
+  background-image: url("../../../assets/basic/button/button-border.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rimgbutton::before {
+  left: 3px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.rimgbutton::after {
+  right: 3px;
+  -webkit-transform: translate(50%, -50%) rotate(180deg);
+          transform: translate(50%, -50%) rotate(180deg);
+  z-index: -1;
+}
+
+.rimgbutton .rbutton-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  -webkit-filter: drop-shadow(0px 0px 5px black);
+          filter: drop-shadow(0px 0px 5px black);
+}
+
+.rimgbutton .rbutton-text {
+  font: normal bold normal 1rem Cormorant;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#7b5605), color-stop(29%, #cfaa52), color-stop(52%, #846604), color-stop(94%, #f9ea97));
+  background: linear-gradient(0deg, #7b5605 0%, #cfaa52 29%, #846604 52%, #f9ea97 94%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-filter: drop-shadow(0px 0px 2px black);
+          filter: drop-shadow(0px 0px 2px black);
+}
+
+.rimgbutton:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.rimgbutton:hover::before {
+  left: 2px;
+}
+
+.rimgbutton:hover::after {
+  right: 2px;
+}
+/*# sourceMappingURL=rimgbutton.css.map */

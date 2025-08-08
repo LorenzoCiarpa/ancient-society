@@ -1,0 +1,347 @@
+.game-colony {
+  .content {
+    .scroll-content {
+      .page-content {
+        display: block !important;
+        padding-top: 0rem !important;
+
+        .header {
+          width: 100%;
+          height: 40px;
+
+          display: flex;
+          align-items: center;
+
+          position: sticky;
+          top: 0;
+
+          z-index: 1;
+
+          border-bottom: 1px solid gray;
+          box-shadow: 0px 5px 5px 1px black;
+
+          // backdrop-filter: blur(5px);
+          background: rgba(0, 0, 0, 0.5);
+
+          .description {
+            width: 50%;
+            @media screen and (max-width: 400px) {
+              width: 40%;
+              div {
+                display: none;
+              }
+            }
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #dfdfdd;
+            font: normal normal normal 14px Raleway;
+
+            a {
+              margin: 0px 3px 0px 10px;
+
+              font-size: 1.3rem;
+              color: lime;
+            }
+          }
+          .action-bar {
+            width: 50%;
+            @media screen and (max-width: 400px) {
+              width: 60%;
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .colonyAddBtn {
+              height: 30px;
+
+              font: normal bold normal 0.8rem Raleway;
+              background: gold;
+              color: black;
+
+              &:hover {
+                background: rgb(50, 50, 50);
+                color: gold;
+              }
+            }
+
+            .nftTransferBtn {
+              margin-left: 1rem;
+
+              height: 30px;
+
+              font: normal normal normal 0.8rem Raleway;
+              background: rgb(0, 60, 0);
+              color: white;
+
+              svg {
+                margin-left: 3px;
+                font-size: 20px;
+                color: #dddddd;
+              }
+
+              &:hover {
+                font-weight: bold;
+                background: white;
+                color: rgb(0, 60, 0);
+
+                svg {
+                  color: rgb(0, 60, 0);
+                }
+              }
+            }
+          }
+        }
+        .city-panel {
+          width: 100%;
+          padding-top: 1rem;
+          overflow: auto;
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          .city {
+            cursor: pointer;
+
+            margin: 1rem;
+            opacity: 0.6;
+            transition: 0.3s all;
+
+            .city-img {
+              width: 120px;
+              height: 120px;
+
+              img {
+                width: 100%;
+                height: 100%;
+                filter: drop-shadow(0px 0px 5px #a7a7a7);
+              }
+            }
+            .city-index {
+              text-align: center;
+
+              font: normal bold normal 1.3rem Cinzel;
+              color: white;
+            }
+
+            &:hover {
+              opacity: 1;
+
+              .city-img {
+                img {
+                  filter: drop-shadow(0px 0px 5px #ffbc00);
+                }
+              }
+              .city-index {
+                color: gold;
+              }
+            }
+
+            &.currentCity {
+              cursor: default;
+              pointer-events: none;
+
+              .city-img {
+                img {
+                  filter: drop-shadow(0px 0px 5px #ffbc00);
+                }
+              }
+              .city-index {
+                color: gold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.add-colony-modal-header {
+  &.warning-text {
+    color: rgb(255, 100, 100) !important;
+  }
+  &.info-text {
+    color: white;
+  }
+}
+.add-colony-modal-content {
+  font: normal normal normal 0.8rem Raleway;
+
+  &.warning-text {
+    color: rgb(200, 150, 150);
+  }
+  &.info-text {
+    color: white;
+  }
+
+  a {
+    font-size: 1rem;
+    color: lime;
+  }
+}
+
+.colony-action-res-text {
+  color: white;
+  font: normal normal normal 1rem Raleway;
+}
+
+.colony-nft-transfer-modal {
+  .MuiPaper-root {
+    margin: 0px;
+
+    .nft-transfer-modal-header {
+      font: normal normal normal 1rem Raleway;
+    }
+    .nft-transfer-modal-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .nft-transfer-description {
+        font: normal normal normal 0.8rem Raleway;
+        color: rgb(255, 255, 150);
+      }
+      .nft-transfer-content {
+        margin-top: 1rem;
+
+        max-height: 400px;
+        overflow: auto;
+
+        .no-nft-text {
+          font: normal normal normal 0.8rem Raleway;
+          color: rgb(200 150 150);
+        }
+
+        .backBtn {
+          cursor: pointer;
+
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          padding: 2px 10px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          border-radius: 5px;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+
+          svg {
+            font-size: 20px;
+            color: white;
+          }
+
+          &:hover {
+            background: black;
+          }
+        }
+
+        .city {
+          cursor: pointer;
+          transition: 0.2s all;
+
+          width: 200px;
+          height: 50px;
+          padding: 0px 10px;
+
+          display: flex;
+          align-items: center;
+
+          color: #dddddd;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+          &:hover {
+            background: rgba(0, 0, 0, 0.5);
+          }
+
+          &.main-city {
+            .city-name {
+              margin-left: 10px;
+              width: fit-content;
+
+              color: #ffbc00;
+
+              padding-bottom: 5px;
+              border-bottom: 1px dotted #ffbc00;
+            }
+          }
+          &.colony-city {
+          }
+
+          .city-name {
+            width: 100px;
+
+            font: normal normal normal 0.9rem Raleway;
+            color: #dddddd;
+
+            a {
+              color: #ffbc00;
+            }
+          }
+        }
+        .nft {
+          cursor: pointer;
+          transition: 0.2s all;
+
+          width: 230px;
+          height: 50px;
+          padding: 0px 10px;
+
+          display: flex;
+          align-items: center;
+
+          position: relative;
+
+          color: #dddddd;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          }
+          &:hover {
+            background: rgba(0, 0, 0, 0.5);
+          }
+
+          .nft-mark {
+            width: 45px;
+            height: 42px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .nft-name {
+            width: 150px;
+            margin-left: 5px;
+
+            font: normal normal normal 0.9rem Raleway;
+
+            a {
+              font: normal normal normal 0.8rem Raleway;
+              color: #ffbc00;
+            }
+          }
+          .nft-status {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+
+            font: normal italic normal 0.8rem Cinzel;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

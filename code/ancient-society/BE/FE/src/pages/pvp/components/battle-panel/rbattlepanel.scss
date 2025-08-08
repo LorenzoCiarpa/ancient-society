@@ -1,0 +1,469 @@
+.rbattlepanel {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .battle-list {
+    width: 320px;
+    height: 100%;
+
+    @media screen and (max-width: 1200px) {
+      height: 300px;
+      width: 100%;
+    }
+
+    overflow: auto;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px 2px black;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .battle-container {
+    width: calc(100% - 350px - 1rem);
+    height: 100%;
+    margin-left: 1rem;
+    padding: 1rem;
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0rem;
+      margin-top: 1rem;
+      width: 100%;
+      height: calc(100% - 300px);
+    }
+
+    overflow: auto;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    color: white;
+    letter-spacing: 0.5px;
+
+    .current-status-text {
+      margin-bottom: 1rem;
+
+      font: normal normal normal 1rem Cormorant;
+      color: rgba(255, 255, 255, 0.8);
+
+      a {
+        font-family: Arial;
+
+        &:nth-child(1) {
+          margin-left: 5px;
+          color: greenyellow;
+        }
+
+        &:nth-child(2) {
+          font-size: 0.9rem;
+          color: white;
+        }
+      }
+    }
+
+    .battle-panel-info {
+      width: 100%;
+      padding: 10px;
+
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      .battle-record {
+        cursor: pointer;
+
+        width: 50%;
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+          width: 50%;
+        }
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+
+        height: 80px;
+        padding: 10px 5px;
+
+        display: flex;
+        flex-direction: column;
+
+        color: rgb(150, 150, 150);
+
+        .record-title {
+          font: normal normal normal 1rem Optimus;
+
+          color: rgb(200, 200, 200);
+        }
+
+        .record-content {
+          margin-top: 5px;
+
+          font: normal normal normal 1rem Cormorant;
+
+          &.battle-result {
+            a {
+              font: normal normal normal 0.9rem Arial;
+
+              &:nth-child(1) {
+                margin-left: 1rem;
+              }
+            }
+          }
+
+          &.rank-result {
+            a {
+              font: normal normal normal 0.9rem Arial;
+
+              &:nth-child(1) {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          &.league-result {
+            a {
+
+              &:nth-child(2),
+              &:nth-child(3) {
+                font: normal normal normal 0.9rem Arial;
+              }
+
+              &:nth-child(2) {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          &.up-league-result {
+            a {
+              &:nth-child(2) {
+                font: normal normal normal 0.9rem Arial;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          color: white;
+
+          .record-title {
+            color: #ffbc00;
+          }
+
+          .record-content {
+            &.battle-result {
+              a {
+                &:nth-child(1) {
+                  color: rgb(100, 255, 100);
+                }
+
+                &:nth-child(2) {
+                  color: rgb(255, 100, 100);
+                }
+              }
+            }
+
+            &.rank-result {
+              a:nth-child(1) {
+                font-size: 1rem;
+                color: #ffbc00;
+              }
+
+              a:nth-child(2) {
+                font-size: 0.9rem;
+                color: greenyellow;
+              }
+            }
+
+            &.league-result {
+              a:nth-child(1) {
+                color: #ffbc00;
+              }
+
+              a:nth-child(2) {
+                color: #ffbc00;
+              }
+
+              a:nth-child(3) {
+                color: greenyellow;
+              }
+            }
+
+            &.up-league-result {
+              a:nth-child(1) {
+                color: #ffbc00;
+              }
+
+              a:nth-child(2) {
+                color: rgb(255, 100, 100);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .battle-actions-text {
+      padding: 2rem 0px 5px 0px;
+
+      font: normal normal normal 1rem Cormorant;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .battle-actions {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .detail-view {
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+
+    position: relative;
+
+    font: normal normal normal 1rem Cormorant;
+    color: white;
+    letter-spacing: 0.5px;
+
+    .backBtn {
+      cursor: pointer;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 2px 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+
+      svg {
+        font-size: 20px;
+      }
+
+      &:hover {
+        background: black;
+      }
+    }
+
+    .arenaName {
+      font: normal normal normal 2rem Cormorant;
+      color: #ffbc00;
+      position: absolute;
+      top: -.2rem;
+      left: calc(50% - 100px);
+    }
+
+    .turn-nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .turnMark {
+        cursor: pointer;
+
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: normal normal normal 1rem Arial;
+
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+        &:hover,
+        &.current {
+          border-color: green;
+        }
+
+        &.ready {
+          background: rgba(0, 255, 0, 0.4);
+        }
+      }
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    .positive-unit-list,
+    .negative-unit-list {
+      width: 100%;
+      margin: 1rem 0rem;
+      display: flex;
+
+      align-items: center;
+
+      .unit-list {
+
+
+        display: flex;
+        align-items: flex-end;
+      }
+
+      &.positive-unit-list {
+        .unit-list {
+          width: 100%;
+        }
+      }
+
+      &.negative-unit-list {
+        justify-content: center;
+        position: absolute;
+        bottom: -1.5rem;
+
+        @media screen and (max-height: 900px) {
+          left: 2rem;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .rank-info {
+            margin-left: -2rem !important;
+          }
+        }
+
+        .player-info {
+          width: 50px;
+          height: fit-content;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .player-avatar {
+            width: 50px;
+            height: 50px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+
+          .player-name {
+            margin-top: 3px;
+            color: gold;
+            font: normal normal normal 1rem Optimus;
+          }
+        }
+
+        .rank-info {
+          margin-left: 1rem;
+
+          display: flex;
+          align-items: center;
+
+          .medal {
+            width: 30px;
+            height: 30px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .war-point {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+
+            a {
+              font-size: 1.2rem;
+              color: #ffbc00;
+            }
+
+            img{
+              width: 25px;
+            }
+          }
+        }
+
+        .more-info {
+          margin-left: 1rem;
+
+          display: flex;
+          flex-direction: column;
+
+          .leaderboard-info {
+            margin-left: 1rem;
+
+            font: normal normal normal 0.8rem Optimus;
+            color: rgba(255, 255, 255, 0.8);
+
+            a:nth-child(1) {
+              font-size: 1.2rem;
+              color: #ffbc00;
+            }
+
+            a:nth-child(2) {
+              font-size: 1rem;
+              color: white;
+            }
+          }
+
+          .battle-record {
+            margin-left: 1rem;
+
+            a {
+              font-size: 1rem;
+            }
+
+            a:nth-child(1) {
+              margin-left: 10px;
+              color: rgb(100, 255, 100);
+            }
+
+            a:nth-child(2) {
+              color: rgb(255, 100, 100);
+            }
+
+            a:nth-child(3) {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .battle-field {
+      height: -webkit-fill-available;
+    }
+  }
+}

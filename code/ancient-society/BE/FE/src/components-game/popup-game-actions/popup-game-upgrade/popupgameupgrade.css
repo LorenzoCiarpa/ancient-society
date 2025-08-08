@@ -1,0 +1,210 @@
+.upgrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #882B21;
+  padding: 2.5vw 0;
+}
+
+.upgrade .building {
+  height: auto;
+  max-height: 400px;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px #DFDFDD solid;
+}
+
+@media screen and (max-width: 700px) {
+  .upgrade .building {
+    display: none;
+  }
+}
+
+.upgrade .container {
+  width: 45%;
+  margin-left: 3vw;
+}
+
+@media screen and (max-width: 700px) {
+  .upgrade .container {
+    margin-top: 5px;
+    width: 95%;
+    margin-left: 0;
+  }
+}
+
+.upgrade .container .container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal bold 1.2rem Cinzel;
+  margin-bottom: 10px;
+}
+
+.upgrade .container .container-1 img {
+  height: 3vw;
+  width: 15px;
+  margin-right: 5px;
+  -webkit-filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1378%) hue-rotate(57deg) brightness(96%) contrast(93%);
+          filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1378%) hue-rotate(57deg) brightness(96%) contrast(93%);
+}
+
+.upgrade .container .container-1 .green {
+  color: #73EE6F;
+}
+
+.upgrade .container .container-1 span {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upgrade .container .container-2 {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: normal normal normal 0.9rem Raleway;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .upgrade .container .container-2 {
+    font-size: 1rem;
+  }
+}
+
+.upgrade .container .container-2 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upgrade .container .container-2 .c2-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.upgrade .container .container-2 .c2-row img {
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1378%) hue-rotate(57deg) brightness(96%) contrast(93%);
+          filter: brightness(0) saturate(100%) invert(88%) sepia(18%) saturate(1378%) hue-rotate(57deg) brightness(96%) contrast(93%);
+}
+
+.upgrade .container .container-2 hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.upgrade .container .c3-headline {
+  font: normal normal normal 1rem Cinzel;
+  color: #DFDFDD;
+}
+
+.upgrade .container .container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 5px;
+}
+
+.upgrade .container .container-3 img {
+  height: auto;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.upgrade .container .container-3 span {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3px 0px;
+  font: normal normal bold 0.9rem Cinzel;
+}
+
+@media screen and (max-width: 700px) {
+  .upgrade .container .container-3 span {
+    font-size: 1.1rem;
+  }
+}
+
+.upgrade .container .container-3 .enough {
+  color: #4cd155;
+}
+
+.upgrade .container .container-3 .missing {
+  color: gold;
+}
+
+.upgrade .container .upgrade-warning {
+  text-align: center;
+}
+
+.upgrade .container .btn-a {
+  margin: 20px auto 0 auto;
+  width: 5vw;
+  height: 3vw;
+  font-size: 1.6rem;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+@media screen and (max-width: 700px) {
+  .upgrade .container .btn-a {
+    height: 30px;
+    width: 50px;
+  }
+}
+
+.upgrade .container .btn-span {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+/*# sourceMappingURL=popupgameupgrade.css.map */

@@ -1,0 +1,133 @@
+.nfts h2 {
+  color: #882B21;
+  font: normal normal normal 2.4rem Cinzel;
+}
+
+@media screen and (max-width: 900px) {
+  .nfts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  .nfts ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .nfts ul img {
+    width: 330px;
+    height: 220px;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  .nfts ul span {
+    z-index: 1;
+    position: absolute;
+    margin-top: 20px;
+    width: 280px;
+  }
+  .nfts ul h4 {
+    z-index: 1;
+    position: absolute;
+    margin-top: 170px;
+    font: normal normal normal 1.2vmax Cinzel;
+    color: white;
+  }
+  .nfts ul h3 {
+    font: normal normal normal 2.2vmax Cinzel;
+    color: #FFB13B;
+  }
+  .nfts ul p {
+    font: normal normal normal 1.8vmax Raleway;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nfts .container *, .nfts .container *:after, .nfts .container *:before {
+    padding: 0;
+    margin: 0;
+  }
+  .nfts .container ul {
+    margin: auto;
+    list-style: none;
+    width: 750px;
+    height: 450px;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 1px 3px 1px;
+            box-shadow: 1px 1px 3px 1px;
+  }
+  .nfts .container li {
+    position: relative;
+    width: 150px;
+    height: 450px;
+    float: left;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .nfts .container ul li:first-child {
+    border: none;
+  }
+  .nfts .container span {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px;
+    color: white;
+    white-space: nowrap;
+    text-align: left;
+    z-index: 1;
+  }
+  .nfts .container img {
+    width: 800px;
+    height: 450px;
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%);
+  }
+  .nfts .container ul:hover li {
+    width: 50px;
+  }
+  .nfts .container ul li:hover {
+    width: 550px;
+  }
+  .nfts .container ul li:hover span {
+    display: block;
+  }
+  .nfts .container ul li:hover h4 {
+    display: block;
+  }
+  .nfts .container h3 {
+    font: normal normal normal 3vh Cinzel;
+    color: #FFB13B;
+  }
+  .nfts .container h4 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    font: normal normal normal 1.5vh Cinzel;
+    color: white;
+  }
+  .nfts .container p {
+    font: normal normal normal 1.5vh Raleway;
+    color: white;
+  }
+}
+/*# sourceMappingURL=nfts.css.map */

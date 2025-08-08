@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,MAAM,EAAE,OAAO;CAClB;;AACD,AAAA,SAAS,CAAA;EACL,MAAM,EAAE,WAAW;CACtB",
+    "sources": [
+        "socialicon.scss"
+    ],
+    "names": [],
+    "file": "socialicon.css"
+}

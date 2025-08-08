@@ -1,0 +1,229 @@
+.rprofile-panel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+
+    &.show {
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(2px);
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    @media screen and (min-width: 801px) {
+        &.show {
+            display: none;
+        }
+    }
+}
+
+.rprofile-panel-container {
+    width: 350px;
+    height: 100%;
+    padding: 1rem;
+
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px black;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    transition: 0.5s;
+
+    .backMain {
+        cursor: pointer;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 10;
+        img {
+            width: 30px;
+            height: 30px;
+            filter: grayscale(50%);
+
+            &:hover {
+                // transform: rotate(360deg);
+                filter: saturate(200%);
+            }
+        }
+    }
+
+    &.show {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(0%, 0%);
+
+        .rprofile-panel-arrow {
+            display: none;
+        }
+
+        overflow: auto;
+    }
+
+    &.hide {
+        transform: translate(-100%, 0%);
+    }
+
+    @media screen and (min-width: 801px) {
+        &.hide {
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            transform: translate(0%, 0%);
+
+            .rprofile-panel-arrow {
+                display: none;
+            }
+
+            overflow: auto;
+        }
+
+        .panel-close-btn {
+            display: none;
+        }
+    }
+
+    .panel-close-btn {
+        cursor: pointer;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            opacity: 0.8;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+
+    .rprofile-panel-arrow {
+        cursor: pointer;
+
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        width: 20px;
+        height: 40px;
+        transform: translate(100%, -50%);
+
+        background: rgba(255, 255, 255, 0.8);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 2px 2px 2px 1px black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            width: 30px;
+
+            span {
+                border-color: black;
+            }
+        }
+
+        span {
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+
+            position: relative;
+            left: -5px;
+
+            transform: rotate(-45deg);
+        }
+    }
+
+    .rprofile-panel {
+        width: 100%;
+        height: fit-content;
+
+        .additional-info-panel {
+            position: relative;
+
+            width: 100%;
+
+            &:first-child {
+                @media screen and (max-width: 800px) {
+                    margin-top: 1.5rem;
+                }
+            }
+
+            &:not(:first-child) {
+                margin-top: 3rem;
+            }
+
+            &:hover {
+                .panel-title {
+                    color: rgba(255, 255, 150, 0.8);
+                }
+
+                .link-to-detail {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+            }
+
+            .panel-title {
+                font: normal normal normal 1rem Optimus;
+                color: rgba(255, 255, 150, 0.5);
+
+                margin: 5px 0px;
+
+                &:hover {
+                    cursor: default;
+                }
+            }
+
+            .link-to-detail {
+                cursor: pointer;
+
+                .menu-icons {
+                    width: 28px;
+                    margin-left: 5px;
+                    height: 28px;
+                    padding: 5px;
+                    border: 1px solid rgb(148, 99, 20);
+                    border-radius: 5px;
+
+                    &:hover {
+                        // transform: rotate(360deg);
+                        filter: saturate(200%);
+                    }
+                }
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                font: normal normal normal 0.9rem Optimus;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
+
+.right-panel-loading {
+    position: relative;
+    background: none;
+    border: none;
+    height: 202px;
+}

@@ -1,0 +1,226 @@
+.shopItem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 25%;
+  min-width: 200px;
+  border: 1px solid white;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.shopItem img {
+  height: 100%;
+  width: 100%;
+}
+
+.shopItem h3, .shopItem h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: #161615;
+  opacity: 0.8;
+  font: normal 1rem Cinzel;
+  color: white;
+  text-align: center;
+}
+
+.shopItem h4 {
+  bottom: 0;
+  font: normal 1rem Raleway;
+  color: #ffb13b;
+}
+
+.shopItem.notAvailable {
+  border: 1px solid red;
+  opacity: 0.8;
+}
+
+.shopItem.notAvailable:hover {
+  cursor: not-allowed;
+}
+
+.shopItem:not(.notAvailable):hover {
+  border: 1px solid #ffb13b;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.7s;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.7s;
+  transition: transform 0.7s, opacity 0.5s ease-in-out;
+  transition: transform 0.7s, opacity 0.5s ease-in-out, -webkit-transform 0.7s;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.showItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2.5vw 0;
+}
+
+.showItem img.itemImage {
+  height: auto;
+  max-height: 400px;
+  width: 40%;
+  min-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px #DFDFDD solid;
+}
+
+.showItem .itemInfo {
+  width: 45%;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .showItem .itemInfo {
+    margin-top: 5px;
+    width: 65%;
+    margin-left: 0;
+  }
+}
+
+.showItem .itemInfo h3 {
+  font: normal normal normal 1.4rem Cinzel;
+  text-align: center;
+}
+
+.showItem .itemInfo .requirements .require {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font: normal normal normal 0.8rem Raleway;
+  border: 1px white solid;
+}
+
+.showItem .itemInfo .requirements .require img {
+  height: auto;
+  width: 25px;
+}
+
+.showItem .itemInfo .requirements .require .isVerified {
+  -webkit-filter: invert(73%) sepia(99%) saturate(305%) hue-rotate(58deg) brightness(102%) contrast(86%);
+          filter: invert(73%) sepia(99%) saturate(305%) hue-rotate(58deg) brightness(102%) contrast(86%);
+}
+
+.showItem .itemInfo .requirements .require .isMissing {
+  -webkit-filter: invert(18%) sepia(27%) saturate(5351%) hue-rotate(348deg) brightness(93%) contrast(85%);
+          filter: invert(18%) sepia(27%) saturate(5351%) hue-rotate(348deg) brightness(93%) contrast(85%);
+}
+
+.showItem .itemInfo .prices {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px #DFDFDD solid;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.showItem .itemInfo .prices img {
+  height: auto;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.showItem .itemInfo .prices p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal bold 0.8rem Cinzel;
+}
+
+.showItem .itemInfo .prices .isEnough {
+  color: green;
+}
+
+.showItem .itemInfo .descr {
+  font: normal normal normal 0.9rem Raleway;
+  color: #ffb13b;
+}
+
+.showItem .itemInfo .descr::before {
+  content: '-';
+  margin-right: 5px;
+}
+
+.showItem .itemInfo .btn-a.shop-buy {
+  margin: 20px auto 0 auto;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.6rem;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+}
+
+@media screen and (max-width: 700px) {
+  .showItem .itemInfo .btn-a.shop-buy {
+    height: 5vw;
+    width: 5vw;
+    font-size: 1.8rem;
+  }
+}
+
+.showItem .itemInfo .btn-span.shop-buy {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.showItem .itemInfo .btn-a.shop-buy:hover:not(.disabled) {
+  background: #c8c8c8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.showItem .itemInfo .btn-a.shop-buy.disabled {
+  background-color: #848D8C;
+  border-top: #848D8C;
+  border-bottom: #848D8C;
+  cursor: not-allowed;
+}
+
+.showItem .green {
+  color: #73EE6F;
+}
+/*# sourceMappingURL=shop-item.css.map */

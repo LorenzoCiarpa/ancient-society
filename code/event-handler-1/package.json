@@ -1,0 +1,26 @@
+{
+  "name": "anc-metadata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "SET NODE_ENV=development & nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.6",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.7.1",
+    "express": "^4.17.3",
+    "express-sslify": "^1.2.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "random": "^3.0.6",
+    "web3": "^1.7.3"
+  }
+}

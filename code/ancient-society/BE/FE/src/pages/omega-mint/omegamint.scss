@@ -1,0 +1,579 @@
+.mintComponent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    // background-color: #121212;
+    background-image: url('../../containers-game/map/assets/map_omega.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #E3E3E3;
+
+    .mintContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        padding-top: 55px;
+        background-image: url("../../assets-ui/ui-borders.webp");
+        background-size: cover;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        z-index: 10;
+
+        @media screen and (max-width: 1000px) {
+            min-height: calc(100vh - 185px);
+        }
+        
+        .mintListings{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow-y: auto; 
+            max-height: calc(100vh - 170px);
+
+            @media screen and (max-width: 600px) {
+                height: calc(100vh - 170px);
+                max-width: 100vw;
+                padding: 5px;
+                padding-top: 0;
+            }
+            
+            .mintListing{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+                border-radius: 8px;
+                box-shadow: 8px 5px 10px #161615;
+                margin: 30px;
+                cursor: pointer;
+                background-image: url("../../assets-ui/ui-borders.webp");
+                background-size: cover;
+                background-position: 50% 0;
+                background-repeat: no-repeat;
+                box-shadow: 2px 2px 10px #f9e99789;
+
+                @media screen and (max-width: 600px) {
+                    height: 200px;
+                    width: 150px;
+                    margin: 15px;
+                }
+
+                .listingName{
+                    width: 100%;
+                    text-align: center;
+                    background-color: #121212d5;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    margin: 0;
+                    padding: 15px 0;
+
+                    font: normal bold 2rem Optimus;
+                    background: -webkit-linear-gradient(#ffffff, #f9e997);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                .listingImg{
+                    position: absolute;
+                    top: 53px;
+                    object-fit: cover;
+                    height: 200px;
+                    width: 300px;
+                    z-index: 1;
+
+                    @media screen and (max-width: 600px) {
+                        top: 35px;
+                        filter: inherit;
+                        height: 150px;
+                        width: 150px;
+                    }
+                }
+
+                .listingInfo{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    bottom: 0;
+
+                    .listingPrice{
+                        font: 1.2rem normal Cinzel;
+                        background: -webkit-linear-gradient(#ffffff, #f9e997);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+                        @media screen and (max-width: 600px) {
+                            margin-bottom: 0;
+                            margin-left: 5px;
+                            z-index: 2;
+                            font-size: 0.6rem;
+                            // background-color: #161615;
+                            padding: 3px;
+                        }
+                    }
+                    .listingShowBtn{
+                        display: none;
+                        font: 1.4rem normal Raleway;
+                        color: black;
+                        background-color: #FFB13B;
+                        @media screen and (max-width: 600px) {
+                            display: none;
+                        }
+                    }
+                    .listingShowBtn:hover{opacity: 0.9;}
+                }
+            }
+            .mintListing:hover{
+                transform: scale(1.01);
+                opacity: 0.9;
+                transition: transform 0.5s;
+            }
+        }
+
+        .mintSelected{
+            display: flex;
+            // flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            @media screen and (max-width: 1000px) {
+                flex-wrap: wrap;
+                margin-top: 0;
+                overflow-y: scroll; 
+                height: calc(100vh - 170px);
+                // margin-bottom: 50px;
+            }
+        
+            .mintSelectedContainer{
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                height: 500px;
+                width: 500px;
+                padding: 30px;
+                background-color: #121212d5;
+                color: white;
+                border-radius: 8px;
+                box-shadow: 8px 5px 10px #161615;
+    
+                @media screen and (max-width: 600px) {
+                    padding: 50px;
+                    padding-top: 0;
+                    box-shadow: none;
+                    min-height: 400px;
+                    width: 330px;
+                }
+
+                .mintSelectedHeader{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .mintSelectedBack{
+                        position: absolute;
+                        cursor: pointer;
+                        img{
+                            border: none;
+                            width: 25px;
+                        }
+                        .disabled{
+                            opacity: 0.5;
+                        }
+                    }
+                    .mintSelectedBack:hover{opacity: 0.8;}
+
+                    h2{
+                        font: normal bold 2.2rem Optimus;
+                        background: -webkit-linear-gradient(#ffffff, #f9e997);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin: 0;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        @media screen and (max-width: 600px) {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                }
+                
+                .mintSelectedHeadlineAndImg{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    img{
+                        width: 90%;
+                        // border: 1px solid #FFB13B;
+                        border-radius: 8px;
+                    }
+                }
+                
+                select{
+                    height: 38px;
+                    width: 300px;
+                    padding: 5px;
+                    background-color: #161615;
+                    font: normal normal normal 1rem Raleway;
+                    color: #FFB13B;
+                    border: 1px solid #FFB13B;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .listingDesc{
+                    border-bottom: 1px solid white;
+                }
+
+                .listingDrops{
+                    align-self: flex-start;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+
+                    .listingDrop{
+                        margin: 0;
+                    }
+                    .isNFT{
+                        color: #8ec3ff;
+                        font-weight: bold;
+                    }
+                }
+                .listingDrops::before{
+                    content: 'Includes: ';
+                    color: #FFB13B;
+                    text-transform: uppercase;
+                    font: 1rem Cinzel;
+                    font-weight: 600;
+                }
+
+                .mintActions{
+                    margin-top: 50px;
+                }
+
+                .mintQuantity{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    @media screen and (max-width: 600px) {
+                        width: 90%;
+                    }
+
+                    input{
+                        height: 26px;
+                        padding: 5px;
+                        background-color: #161615;
+                        text-align: center;
+                        font: normal normal normal 1.2rem Raleway;
+                        color: #FFB13B;
+                        border: 1px solid #FFB13B;
+                        outline: none;
+                    }
+            
+                    .btnQuantity{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 5px;
+                        height: 25px;
+                        width: 25px;
+                        background-color: #2e2e2c;
+                        font: normal normal normal 1.4rem Raleway;
+                        color: #FFB13B;
+                        border: 1px solid #FFB13B;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .option_img{
+                @media screen and (max-width: 600px) {
+                    min-height: 330px;
+                    height: 330px;
+                }
+            }
+    
+        }
+
+        .mintReferral{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            margin-top: 20px;
+
+            @media screen and (max-width: 600px) {
+                height: 40px;
+                width: 90%;
+                padding: 20px;
+                margin-top: auto;
+                flex-direction: column;
+                background-image: url("../../assets-ui/ui-borders.webp");
+                background-size: cover;
+                background-position: 50% 0;
+                background-repeat: no-repeat;
+            }
+
+            span{
+                display: flex;
+                align-items: center;
+                font: normal bold 1.3rem Optimus;
+                background: -webkit-linear-gradient(#ffffff, #f9e997);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 5px;
+
+                @media screen and (max-width: 600px) {
+                    margin: 0;
+                }
+
+                p.MuiTypography-root{
+                    margin-right: 5px;
+                }
+            }
+
+            input{
+                height: 24px;
+                width: 400px;
+                padding: 5px;
+                margin-left: 5px;
+                background-color: #161615;
+                text-align: center;
+                font: normal normal normal 1rem Raleway;
+                color: #FDF6D3;
+                border: 1px solid #FDF6D3;
+                outline: none;
+
+                @media screen and (max-width: 600px) {
+                    height: 16px;
+                    width: 300px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #121212;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #FFB13B;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #ffa114;
+        }
+    }
+
+    .mintContainer.referral{
+
+        .referral-infos{
+            width: 90%;
+            overflow-y: auto;
+            max-height: calc(100vh - 270px);
+            padding-left: 90px;
+            padding-bottom: 50px;
+            @media screen and (max-width: 600px) {
+                padding-left: 20px
+            }
+
+            .referral-info{
+                padding-top: 50px;
+                @media screen and (max-width: 600px) {
+                    width: 90%;
+                    padding-top: 0;
+                    margin-bottom: 70px;
+                }
+
+                h2{
+                    font: normal bold 1.5rem Optimus;
+                    background: -webkit-linear-gradient(#ffffff, #f9e997);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                    @media screen and (max-width: 600px) {
+                        font-size: 1.3rem;
+                    }
+                }
+                p{
+                    font: normal normal 1.2rem Raleway;
+                }
+                input.referral-input{
+                    height: 24px;
+                    width: 463px;
+                    padding: 5px;
+                    margin-left: 5px;
+                    margin-right: 15px;
+                    background-color: #161615;
+                    font: normal normal normal 1.2rem Raleway;
+                    color: #FDF6D3;
+                    border: 1px solid #FDF6D3;
+                    outline: none;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+    
+                    @media screen and (max-width: 600px) {
+                        height: 16px;
+                        width: 300px;
+                        margin-left: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .referral-input-container{
+                    margin-top: 15px;
+                    display: flex;
+                    align-items: center;
+                    width: 780px;
+                    max-width: 80vw;
+                    position: relative;
+
+                    .my-link{ 
+                        width: 575px;
+                        font: normal bold 1rem Raleway;
+                        color: white;
+                        border-color: white;
+                        border-radius: 25px;
+                        padding-left: 15px;
+                    }
+                    .copy-icon{
+                        cursor: pointer;
+                    }
+                }
+          
+            }
+
+        }
+    }
+
+    .useWallet{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 15px;
+
+        h3, p{margin: 5px;}
+        p.switchNetwork{
+            text-align: center;
+            cursor: pointer;
+            color: gainsboro;
+            text-decoration: underline;
+        }
+        p.priceRecap{
+            color: #FFB13B;
+        }
+        button{
+            width: 300px;
+            margin-top: 10px;
+        }
+    }
+
+    .omega-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        width: 100%;
+        background-image: url("./header.webp");
+        background-size: cover;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1000px) {
+            justify-content: space-between;
+        }
+
+        img{
+            margin-top: 15px;
+            max-width: 95vw;
+            width: 400px;
+            @media screen and (max-width: 1000px) {
+                margin-top: 0;
+                width: 250px;
+            }
+        }
+
+        .btnUI{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+
+            @media screen and (max-width: 1000px) {
+                position: relative;
+                top: auto;
+                right: 10px;
+                height: 35px;
+                width: 110px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                font-size: 0.9rem;
+            }
+        }
+
+        // span{
+        //     position: absolute;
+        //     font: normal bold 1.5rem Optimus;
+        //     background: -webkit-linear-gradient(#ffffff, #f9e997);
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        //     cursor: pointer;
+
+        //     @media screen and (max-width: 1000px) {
+        //         position: relative;
+        //         align-self: flex-end;
+        //         font-size: 1rem;
+        //         padding-bottom: 10px;
+        //     }
+        // }
+        span.header-left{left: 30px;}
+        span.header-right{right: 30px;}
+}
+
+    .omega-footer{
+        background-image: url("./footer.webp");
+        background-size: cover;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 85px;
+        width: 100vw;
+        margin-top: auto;
+        img{
+            width: 140px; 
+            margin-right: 25px;
+            margin-bottom: 0px;
+            @media screen and (max-width: 600px) {
+                width: 120px; 
+                margin-right: 3px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
+.ancientGold{color: #FFB13B;}

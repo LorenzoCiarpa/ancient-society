@@ -1,0 +1,41 @@
+.btn-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e0e0dc;
+  padding: 10px 45px;
+  width: 100px;
+  height: 18px;
+  color: #511014;
+  border-bottom: 5px solid #BDC0B7;
+  border-left: 6px solid #848D8C;
+  border-right: 6px solid #848D8C;
+  border-top: 2px solid #5C7E9A;
+  font: normal normal normal 20px Cinzel;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transform: perspective(510px) rotateX(-24deg);
+          transform: perspective(510px) rotateX(-24deg);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-span {
+  white-space: nowrap;
+  -webkit-transform: perspective(240px) rotateX(10deg);
+          transform: perspective(240px) rotateX(10deg);
+}
+
+.btn-a:hover {
+  background: #c8c8c8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=button.css.map */

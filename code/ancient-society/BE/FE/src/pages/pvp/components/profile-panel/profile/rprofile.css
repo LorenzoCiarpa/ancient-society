@@ -1,0 +1,131 @@
+.rprofile {
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.rprofile .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 5px 1px black;
+          box-shadow: 1px 1px 5px 1px black;
+  position: relative;
+}
+
+.rprofile .avatar .avatar-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rprofile .avatar img {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.rprofile .info-panel {
+  margin-left: 1rem;
+  width: calc(200px - 1rem);
+  color: white;
+  font: normal normal normal 0.8rem Optimus;
+  letter-spacing: 0.5px;
+}
+
+.rprofile .info-panel .rank-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rprofile .info-panel .rank-info .medal {
+  width: 50px;
+  height: 50px;
+}
+
+.rprofile .info-panel .rank-info .medal img {
+  width: 100%;
+  height: 100%;
+}
+
+.rprofile .info-panel .rank-info .war-point {
+  margin-left: 10px;
+  font: normal normal normal 0.8rem Optimus;
+}
+
+.rprofile .info-panel .rank-info .war-point a {
+  font-size: 1.2rem;
+  color: #ffbc00;
+}
+
+.rprofile .info-panel .rank-info .war-point .pvp-points {
+  color: #ff6464;
+}
+
+.rprofile .info-panel .leaderboard-info {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rprofile .info-panel .leaderboard-info a:nth-child(1) {
+  font-size: 1.2rem;
+  color: #ffbc00;
+}
+
+.rprofile .info-panel .leaderboard-info a:nth-child(2) {
+  font-size: 1rem;
+  color: white;
+}
+
+.rprofile .info-panel .battle-record {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.rprofile .info-panel .battle-record a {
+  font-size: 1rem;
+}
+
+.rprofile .info-panel .battle-record a:nth-child(1) {
+  margin-left: 10px;
+  color: #64ff64;
+}
+
+.rprofile .info-panel .battle-record a:nth-child(2) {
+  color: #ff6464;
+}
+
+.rprofile .info-panel .battle-record a:nth-child(3) {
+  color: white;
+}
+
+.rprofile .info-panel .nft-info {
+  margin-top: 3px;
+  color: #ffbc00;
+}
+
+.rprofile .info-panel .nft-info a {
+  font: normal normal normal 0.9rem sans-serif;
+  color: white;
+}
+/*# sourceMappingURL=rprofile.css.map */

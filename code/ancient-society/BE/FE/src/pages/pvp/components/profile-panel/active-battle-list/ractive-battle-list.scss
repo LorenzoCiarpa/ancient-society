@@ -1,0 +1,117 @@
+.ractive-battle-list {
+    width: 100%;
+    height: 202px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.1);
+
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+
+    overflow: hidden;
+
+    .empty-text {
+        color: white;
+        text-align: center;
+        margin: auto;
+        margin-top: 5rem;
+        font: normal normal normal 1.2rem Optimus;
+    }
+
+    &:hover {
+        -webkit-mask-image: none;
+        mask-image: none;
+
+        overflow: auto;
+        box-shadow: 2px 2px 5px 2px black;
+    }
+
+    .active-battle {
+        cursor: pointer;
+
+        width: fit-content;
+        height: 50px;
+
+        padding: 0px 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        color: white;
+
+        background: rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+        position: relative;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .opp-avatar {
+            width: 40px;
+            height: 40px;
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .opp-name {
+            margin-left: 5px;
+            width: 100px;
+
+            .nagetive {
+                font: normal normal normal 0.7rem Optimus;
+                color: gold;
+            }
+
+            font: normal normal normal 0.8rem Optimus;
+            color: rgb(200, 200, 200);
+        }
+
+        .battle-flow-time {
+            margin-left: 1rem;
+            width: 80px;
+
+            display: flex;
+            align-items: center;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            a {
+                font-size: 0.8rem;
+
+                margin-left: 3px;
+                margin-top: 3px;
+                font: normal bold normal 0.8rem Optimus;
+                color: rgb(100 255 100);
+            }
+        }
+
+        .battle-status-badge {
+            margin-left: 20px;
+            width: fit-content;
+            height: 100%;
+
+            color: rgb(255 150 0);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            filter: drop-shadow(2px 2px 1px black);
+
+            svg {
+                font-size: 25px;
+            }
+        }
+    }
+}

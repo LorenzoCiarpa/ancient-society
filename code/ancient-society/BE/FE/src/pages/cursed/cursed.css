@@ -1,0 +1,117 @@
+.cursed-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9998;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../containers-game/map/assets/map.jpg");
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cursed {
+  position: fixed;
+  top: 25%;
+  left: 10vw;
+  right: 10vw;
+  margin: auto;
+  height: auto;
+  width: 500px;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.589);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .cursed {
+    width: 100vw;
+    top: 20vh;
+    left: 0;
+  }
+}
+
+.cursed .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: #16161583;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+}
+
+.cursed .head img {
+  width: 250px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.cursed .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 250px;
+  background-color: #16161583;
+  padding-bottom: 30px;
+}
+
+.cursed .body h2 {
+  font: normal normal bold 1.4rem Cinzel;
+}
+
+.cursed .body svg {
+  color: white;
+}
+
+.cursed .body .message, .cursed .body .messageError {
+  font: normal normal bold 0.9rem Raleway;
+}
+
+.cursed .body .message {
+  color: #00d600;
+}
+
+.cursed .body .messageError {
+  color: red;
+}
+
+.cursed .socialIcons {
+  z-index: 9999;
+  position: absolute;
+  bottom: -55px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cursed .socialIcons img {
+  margin: 10px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7016%) hue-rotate(52deg) brightness(10%) contrast(74%);
+          filter: invert(100%) sepia(0%) saturate(7016%) hue-rotate(52deg) brightness(10%) contrast(74%);
+}
+/*# sourceMappingURL=cursed.css.map */

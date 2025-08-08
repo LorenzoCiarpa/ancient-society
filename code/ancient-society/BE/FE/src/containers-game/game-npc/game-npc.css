@@ -1,0 +1,32 @@
+.game-npc .ATM {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-npc .ATM .notAvailableATM {
+  width: 80%;
+  font: normal large Raleway;
+  color: white;
+}
+
+.game-npc .ATM .notAvailableATM_Img {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .game-npc .ATM .notAvailableATM_Img {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=game-npc.css.map */

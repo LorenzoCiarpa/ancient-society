@@ -1,0 +1,71 @@
+.lotteryTicket {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20%;
+  min-width: 150px;
+  border: 1px solid white;
+  margin: 15px;
+}
+
+.lotteryTicket img {
+  height: 100%;
+  width: 100%;
+}
+
+.lotteryTicket h3 {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161615;
+  font: normal 1.2rem Cinzel;
+  color: white;
+  text-align: center;
+}
+
+.lotteryTicket h4 {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font: normal 0.6rem Raleway;
+  text-transform: uppercase;
+  color: white;
+}
+
+.lotteryTicket h4.expired {
+  color: red;
+}
+
+.lotteryTicket h4.won {
+  color: green;
+}
+
+.lotteryTicket.expired {
+  border: 1px solid red;
+  opacity: 0.6;
+}
+
+.lotteryTicket.won {
+  border: 1px solid green;
+}
+/*# sourceMappingURL=lottery-item.css.map */

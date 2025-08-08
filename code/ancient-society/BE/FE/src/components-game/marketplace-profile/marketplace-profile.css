@@ -1,0 +1,232 @@
+.marketplace-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.marketplace-profile .new-announce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  border: 1px solid #dfdfdd;
+  margin-bottom: 40px;
+}
+
+.marketplace-profile .new-announce p {
+  font: normal normal 600 1rem Raleway;
+  color: #FFB13B;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.marketplace-profile .new-announce .inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.marketplace-profile .new-announce .inputs span {
+  position: relative;
+  width: calc(20% - 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: normal normal normal 0.7rem Raleway;
+  color: #FFB13B;
+  margin-left: 15px;
+}
+
+.marketplace-profile .new-announce .inputs span:last-child {
+  width: calc(40% - 15px);
+}
+
+@media screen and (max-width: 1000px) {
+  .marketplace-profile .new-announce .inputs span {
+    margin-top: 10px;
+    width: calc(47% - 15px) !important;
+  }
+  .marketplace-profile .new-announce .inputs span:last-child input {
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+  }
+  .marketplace-profile .new-announce .inputs span:last-child h3 {
+    opacity: 0.4 !important;
+  }
+}
+
+.marketplace-profile .new-announce .inputs span input {
+  margin-top: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #161615;
+  font: normal normal normal 0.8rem Raleway;
+  color: #FFB13B;
+  border: 1px solid #FFB13B;
+  outline: none;
+}
+
+.marketplace-profile .new-announce .inputs span h3 {
+  opacity: 0.8;
+  font-size: 0.6rem;
+  font-weight: normal;
+  font-style: italic;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  /* 
+                    @media screen and (max-width: 1000px) {
+                        margin-left: 14%;
+                    } */
+}
+
+.marketplace-profile .new-announce .inputs span h4 {
+  opacity: 0.8;
+  position: absolute;
+  margin-top: 50px;
+  font-weight: normal;
+}
+
+.marketplace-profile .new-announce .inputs span select {
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #161615;
+  font: normal normal normal 0.8rem Raleway;
+  color: #FFB13B;
+  border: 1px solid #FFB13B;
+  outline: none;
+}
+
+.marketplace-profile .new-announce .inputs span .time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.marketplace-profile .new-announce .inputs span .time .days-container {
+  width: 45%;
+  position: relative;
+}
+
+.marketplace-profile .new-announce .inputs span .time .hours-container {
+  width: 45%;
+  position: relative;
+}
+
+.marketplace-profile .new-announce .inputs span .time .days {
+  opacity: 0.8;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  /* 
+                        margin-top: 14px;
+                        margin-left: 4%;
+
+                        @media screen and (max-width: 1000px) {
+                            margin-left: 8%;
+                        } */
+}
+
+.marketplace-profile .new-announce .inputs span .time .hours {
+  opacity: 0.6;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  /* margin-top: 14px;
+                        margin-left: 5%;
+
+                        @media screen and (max-width: 1000px) {
+                            margin-left: 10%;
+                        } */
+}
+
+.marketplace-profile .new-announce .inputs span .time input {
+  max-width: calc(100% - 25px);
+}
+
+.marketplace-profile .new-announce input:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.marketplace-profile .new-announce .buttons {
+  width: 220px;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.marketplace-profile .new-announce .buttons .btn-reset.btn-a {
+  width: 0px;
+  height: 13px;
+  background-color: #161615;
+  color: #FF1900;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #FF1900;
+}
+
+.marketplace-profile .new-announce .buttons .btn-reset.btn-a span {
+  border: none;
+}
+
+.marketplace-profile .new-announce .buttons .btn-sell.btn-a {
+  width: 10px;
+  height: 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-transform: perspective(510px) rotateX(24deg);
+          transform: perspective(510px) rotateX(24deg);
+  margin: 0;
+  color: #5E0C0C;
+}
+
+.marketplace-profile .new-announce .buttons .btn-sell.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.marketplace-profile .new-announce .buttons .btn-sell.btn-span {
+  -webkit-transform: perspective(240px) rotateX(-10deg);
+          transform: perspective(240px) rotateX(-10deg);
+}
+
+.marketplace-profile h5.mrkt-error {
+  margin: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: absolute;
+  color: #FF1900;
+}
+/*# sourceMappingURL=marketplace-profile.css.map */

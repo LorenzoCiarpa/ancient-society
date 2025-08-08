@@ -1,0 +1,93 @@
+.mintConnectContainer{
+    margin-top: 5vh;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+    width: 40vw;
+    min-width: 300px;
+    max-width: 400px;
+
+    padding: 30px;
+    background-color: #161615;
+    color: white;
+    font-family: Raleway;
+
+    @media screen and (max-width: 500px) {
+        // margin-top: 10px;
+    }
+
+    .mintConnectLogo{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    h2, h3{font-family: Cinzel;}
+    h2{ 
+        font-size: 1.4rem; 
+
+        @media screen and (max-width: 500px) {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+    }
+
+    span{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .mintConnectPrice{
+            width: 150px;
+            padding: 10px;
+            border: 1px solid white;
+
+            b{color: #FFB13B}
+        }
+    }
+
+    hr{
+        margin-top: 40px;
+        width: 80%;
+        opacity: 0.5;
+    }
+
+    .mintConnectSupply{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8rem;
+
+        b{color: #FFB13B}
+    }
+
+    button{
+        margin-top: 20px;
+        height: 48px;
+        width: 180px;
+        background-color: #2e2e2c;
+        font: normal normal normal 1.4rem Cinzel;
+        color: #FFB13B;
+        border: 1px solid #FFB13B;
+        cursor: pointer;
+    } button:hover{
+        opacity: 0.9;
+        transform: scale(1.02);
+        transition: transform 0.7s, opacity 0.5s ease-in-out;
+    }
+}
+
+.mintConnectLinks{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img{
+        margin: 15px;
+    }
+}
