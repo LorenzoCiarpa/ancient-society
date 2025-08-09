@@ -290,20 +290,5 @@ Configure contract addresses in respective config files:
 
 ---
 
-## Support
-
-For technical support and questions:
-- Create an issue on the repository
-- Join the community Discord
-- Check documentation wiki
-
----
-
-## License
-
-[Specify license here]
-
----
-
 **Note**: This project requires proper configuration of database connections and blockchain private keys in the respective config files before running. Ensure all environment variables are properly set up according to your deployment environment.
 
